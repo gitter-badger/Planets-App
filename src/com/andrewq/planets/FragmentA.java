@@ -12,7 +12,7 @@ import android.widget.Button;
 public class FragmentA extends Fragment {
 
     Button button;
-    //Hello
+    //Hi everyone!
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
