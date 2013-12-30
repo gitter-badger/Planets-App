@@ -1,61 +1,89 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/scrollView4"
-    android:padding="10dp"
-    android:layout_gravity="top">
+    android:layout_gravity="top" >
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.andrewq.planets.FragmentD">
+        android:layout_height="wrap_content"
+        tools:context="com.andrewq.planets.FragmentD" >
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent" >
 
             <TextView
                 android:id="@+id/earth_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="10dp"
+                android:layout_centerHorizontal="true"
                 android:paddingLeft="10dp"
-                android:textSize="30sp"
+                android:paddingTop="10dp"
                 android:text="@string/earth_title"
-                android:layout_centerHorizontal="true"/>
+                android:textSize="30sp" />
 
             <ImageView
                 android:id="@+id/earth"
-                android:layout_below="@+id/earth_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/earth"
-                android:layout_centerHorizontal="true"/>
+                android:layout_below="@+id/earth_title"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/earth_image"
+                android:src="@drawable/earth" />
 
             <TextView
+                android:id="@+id/earth_sub_title_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/earth_description"
-                android:paddingTop="10dp"
-                android:textSize="14sp"
-                android:paddingLeft="10dp"
-                android:text="@string/earth_description"
                 android:layout_below="@+id/earth"
-                android:layout_centerHorizontal="true"/>
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="4dp"
+                android:text="@string/earth_sub_title_1"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/earth_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/earth_sub_title_1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/earth_description"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/earth_sub_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/earth_description"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/earth_sub_title_2"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/earth_description_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/earth_sub_title_2"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/earth_description_2"
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/button_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="4dp"
-                android:text="@string/button_4"
-                android:layout_below="@+id/earth_description"
-                android:layout_centerHorizontal="true"/>
-
+                android:layout_below="@+id/earth_description_2"
+                android:layout_centerHorizontal="true"
+                android:text="@string/button_4" />
         </RelativeLayout>
-
     </FrameLayout>
 
 </ScrollView>

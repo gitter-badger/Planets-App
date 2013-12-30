@@ -1,101 +1,99 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/scrollView2"
-    android:paddingBottom="1dp"
-    android:layout_gravity="top">
+    android:layout_gravity="top"
+    android:paddingBottom="1dp" >
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.andrewq.planets.FragmentB">
+        android:layout_height="wrap_content"
+        tools:context="com.andrewq.planets.FragmentB" >
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent" >
 
             <TextView
                 android:id="@+id/mercury_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="10dp"
+                android:layout_centerHorizontal="true"
                 android:paddingBottom="3dp"
-                android:textSize="30sp"
-                android:textStyle="bold|italic"
+                android:paddingTop="10dp"
                 android:text="@string/mercury_title"
-                android:layout_centerHorizontal="true"/>
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
 
             <ImageView
                 android:id="@+id/mercury"
-                android:layout_below="@+id/mercury_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/mercury_title"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/mercury_image"
                 android:paddingBottom="3dp"
-                android:src="@drawable/mercury"
-                android:layout_centerHorizontal="true"/>
+                android:src="@drawable/mercury" />
 
             <TextView
                 android:id="@+id/mercury_sub_title_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/mercury"
+                android:layout_centerHorizontal="false"
+                android:paddingBottom="3dp"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
-                android:paddingBottom="3dp"
-                android:textSize="18sp"
-                android:textStyle="bold|italic"
                 android:text="@string/mercury_sub_title_1"
-                android:layout_centerHorizontal="false"
-                android:layout_below="@+id/mercury"/>
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
 
             <TextView
                 android:id="@+id/mercury_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/mercury_sub_title_1"
+                android:layout_centerHorizontal="false"
+                android:paddingBottom="3dp"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
-                android:paddingBottom="3dp"
-                android:textSize="16sp"
                 android:text="@string/mercury_description"
-                android:layout_centerHorizontal="false"
-                android:layout_below="@+id/mercury_sub_title_1"/>
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/mercury_sub_title_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/mercury_description"
+                android:layout_centerHorizontal="false"
+                android:paddingBottom="3dp"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
-                android:paddingBottom="3dp"
-                android:textSize="18sp"
-                android:textStyle="bold|italic"
                 android:text="@string/mercury_sub_title_2"
-                android:layout_centerHorizontal="false"
-                android:layout_below="@+id/mercury_description"/>
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
 
             <TextView
                 android:id="@+id/mercury_description_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/mercury_sub_title_2"
+                android:layout_centerHorizontal="false"
+                android:paddingBottom="3dp"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
-                android:paddingBottom="3dp"
-                android:textSize="16sp"
                 android:text="@string/mercury_description_2"
-                android:layout_centerHorizontal="false"
-                android:layout_below="@+id/mercury_sub_title_2"/>
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/button_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/button_2"
+                android:layout_below="@+id/mercury_description_2"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/mercury_description_2"/>
-
-
+                android:text="@string/button_2" />
         </RelativeLayout>
-
     </FrameLayout>
 
 </ScrollView>

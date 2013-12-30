@@ -24,7 +24,7 @@ public class FragmentC extends Fragment {
             @Override
             public void onClick(View v) {
 
-                String url = "http://www.google.com";
+                String url = "http://space-facts.com/venus/";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);

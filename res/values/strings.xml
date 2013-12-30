@@ -8,12 +8,19 @@
     <string name="action_about">About</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Accessibility Titles -->
+    <string name="sun_image">Picture of Sun</string>
+    <string name="mercury_image">Picture of Mercury</string>
+    <string name="venus_image">Picture of Venus</string>
+    <string name="earth_image">Picture of Earth</string>
+    <string name="mars_image">Picture of Mars</string>
+
     <!-- Sources -->
-    <string name="button_1">Source 1</string>
-    <string name="button_2">Source 2</string>
-    <string name="button_3">Source 3</string>
-    <string name="button_4">Source 4</string>
-    <string name="button_5">Source 5</string>
+    <string name="button_1">Source</string>
+    <string name="button_2">Source</string>
+    <string name="button_3">Source</string>
+    <string name="button_4">Source</string>
+    <string name="button_5">Source</string>
 
     <!-- Objects Names -->
     <string name="sun_title">Sun (Sol)</string>
@@ -72,14 +79,58 @@ Mercury has wrinkles.
 As the iron core of the planet cooled and contracted, the surface of the planet became wrinkled. Scientist have named these wrinkles, Lobate Scarps. These Scarps can be up to a mile high and hundreds of miles long.</string>
     <string name="venus_title">Venus</string>
     <string name="venus_sub_title_1">Specific Information:</string>
-    <string name="venus_description">Venus Description</string>
+    <string name="venus_description">Mass: 4,867,320,000,000,000 billion kg (0.815 x Earth)\nEquatorial Diameter: 12,104 km\nPolar Diameter: 12,104 km\nEquatorial Circumference: 38,025 km\nKnown Satellites: none\nNotable Satellites: none\nOrbit Distance: 108,209,475 km (0.73 AU)\nOrbit Period: 224.70 Earth days\nSurface Temperature: 462 °C\nFirst Record: 17th century BC\nRecorded By: Babylonian astronomers</string>
     <string name="venus_sub_title_2">General Information:</string>
-    <string name="venus_description_2">Description 2</string>
+    <string name="venus_description_2">A day on Venus lasts longer than a year:
+It takes 243 Earth days to make rotate once on its axis. The planet’s orbit around the Sun takes 225 Earth days, compared to the Earth’s 365.
+
+Venus is often called the Earth’s sister planet:
+Earth and Venus are very similar in size with only a 638 km difference in diameter, Venus having 81.5% of the Earth’s mass. Both also have a central core, a molten mantle and a crust.
+
+Venus rotates counter-clockwise:
+Also known as retrograde rotation. A possible reason might be a collision in the past with an asteroid or other object that caused the planet to alter its rotational path. It also differs from most other planets in our solar system by having no natural satellites.
+
+Venus is the second brightest object in the night sky:
+Only the Moon is brighter. With a magnitude of between -3.8 to -4.6 Venus is so bright it can be seen during daytime on a clear day.
+
+Atmospheric pressure on Venus is 92 times greater than the Earth’s:
+While its size and mass are similar to Earth, the small asteroids are crushed when entering its atmosphere, meaning no small craters lie on the surface of the planet. The pressure felt by a human on the surface would be equivalent to that experienced deep beneath the sea on Earth.
+
+Venus is also known as the Morning Star and the Evening Star:
+Early civilisations thought Venus was two different bodies, called Phosphorus and Hesperus by the Greeks, and Lucifer and Vesper by the Romans. This is because when its orbit around the Sun overtakes Earth’s orbit, it changes from being visible after sunset to being visible before sunrise. Mayan astronomers made detailed observations of Venus as early as 650 AD.
+
+Venus is the hottest planet in our solar system:
+The average surface temperature is 462 °C, and because Venus does not tilt on its axis, there is no seasonal variation. The dense atmosphere of around 96.5 percent carbon dioxide traps heat and causes a greenhouse effect.
+
+A detailed study of Venus is currently underway:
+In 2006, the Venus Express space shuttle was sent into orbit around Venus by the European Space Agency, and is sending back information about the planet. Originally planned to last five hundred Earth days, the mission has been extended several times. More than 1,000 volcanoes or volcanic centres larger than 20 km have been found on the surface of Venus.
+
+The Russians sent the first mission to Venus:
+The Venera 1 space probe was launched in 1961, but lost contact with base. The USA also lost their first probe to Venus, Mariner 1, although Mariner 2 was able to take measurements of the planet in 1962. The Soviet Union’s Venera 3 was the first man-made craft to land on Venus in 1966.
+
+At one point it was thought Venus might be a tropical paradise:
+The dense clouds of sulphuric acid surrounding Venus make it impossible to view its surface from outside its atmosphere. It was only when radio mapping was developed in the 1960s that scientists were able to observe and measure the extreme temperatures and hostile environment. It is thought Venus did once have oceans but these evaporated as the planets temperature increased</string>
     <string name="earth_title">Earth</string>
     <string name="earth_sub_title_1">Specific Information:</string>
-    <string name="earth_description">Earth Description</string>
+    <string name="earth_description">Mass: 5,972,190,000,000,000 billion kg\nEquatorial Diameter: 12,756 km\nPolar Diameter: 12,714 km\nEquatorial Circumference: 40,030 km\nKnown Satellites: 1\nNotable Satellites: The Moon\nOrbit Distance: 149,598,262 km (1 AU)\nOrbit Period: 365.26 Earth days\nSurface Temperature: -88 to 58°C</string>
     <string name="earth_sub_title_2">General Information:</string>
-    <string name="earth_description_2">Description 2</string>
+    <string name="earth_description_2">The Earth’s rotation is gradually slowing:
+This deceleration is happening almost imperceptibly, at approximately 17 milliseconds per hundred years, although the rate at which it occurs is not perfectly uniform. This has the effect of lengthening our days, but it happens so slowly that it could be as much as 140 million years before the length of a day will have increased to 25 hours.
+
+The Earth was once believed to be the centre of the universe:
+Due to the apparent movements of the Sun and planets in relation to their viewpoint, ancient scientists insisted that the Earth remained static, whilst other celestial bodies travelled in circular orbits around it. Eventually, the view that the Sun was at the centre of the universe was postulated by Copernicus and this was eventually shown to be the case.
+
+Earth has a powerful magnetic field:
+This phenomenon is caused by the nickel-iron core of the planet, coupled with its rapid rotation. This field protects the Earth from the effects of solar wind.
+
+There is only one natural satellite of the planet Earth:
+As a percentage of the size of the body it orbits, the Moon is the largest satellite of any planet in our solar system. In real terms, however, it is only the fifth largest natural satellite.
+
+Earth is the only planet not named after a god:
+The other seven planets in our solar system are all named after Roman gods or goddesses. Although only Mercury, Venus, Mars, Jupiter and Saturn were named during ancient times, because they were visible to the naked eye, the Roman method of naming planets was retained after the discovery of Uranus and Neptune.
+
+Of all the planets in our solar system, the Earth has the greatest density:
+This varies according to the part of the planet; for example, the metallic core is denser than the crust. The average density of the Earth is approximately 5.52 grams per cubic centimetre.</string>
     <string name="mars_title">Mars</string>
     <string name="mars_sub_title_1">Specific Information:</string>
     <string name="mars_description">Mars Description</string>

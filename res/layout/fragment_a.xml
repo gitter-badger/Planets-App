@@ -1,99 +1,97 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/scrollView1"
-    android:paddingBottom="1dp"
-    android:layout_gravity="top">
+    android:layout_gravity="top"
+    android:paddingBottom="1dp" >
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.andrewq.planets.FragmentA">
+        android:layout_height="wrap_content"
+        tools:context="com.andrewq.planets.FragmentA" >
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent" >
 
             <TextView
                 android:id="@+id/sun_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold|italic"
-                android:paddingTop="10dp"
+                android:layout_centerHorizontal="true"
                 android:paddingBottom="3dp"
-                android:textSize="30sp"
+                android:paddingTop="10dp"
                 android:text="@string/sun_title"
-                android:layout_centerHorizontal="true"/>
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
 
             <ImageView
                 android:id="@+id/sun"
-                android:layout_below="@+id/sun_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/sun"
-                android:contentDescription="orange sun with black background"
-                android:layout_centerHorizontal="true"/>
+                android:layout_below="@+id/sun_title"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/sun_image"
+                android:src="@drawable/sun" />
 
             <TextView
+                android:id="@+id/sun_sub_title_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sun_sub_title_1"
-                android:paddingTop="5dp"
-                android:textSize="18sp"
+                android:layout_below="@+id/sun"
+                android:layout_centerHorizontal="false"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
+                android:paddingTop="5dp"
                 android:text="@string/sun_sub_title_1"
-                android:textStyle="bold|italic"
-                android:layout_below="@+id/sun"
-                android:layout_centerHorizontal="false"/>
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
 
             <TextView
+                android:id="@+id/sun_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sun_description"
-                android:textSize="16sp"
+                android:layout_below="@+id/sun_sub_title_1"
+                android:layout_centerHorizontal="false"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:text="@string/sun_description"
-                android:layout_below="@+id/sun_sub_title_1"
-                android:layout_centerHorizontal="false"/>
+                android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/sun_sub_title_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sun_sub_title_2"
-                android:textSize="18sp"
+                android:layout_below="@+id/sun_description"
+                android:layout_centerHorizontal="false"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:text="@string/sun_sub_title_2"
-                android:textStyle="bold|italic"
-                android:layout_below="@+id/sun_description"
-                android:layout_centerHorizontal="false"/>
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
 
             <TextView
+                android:id="@+id/sun_description_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sun_description_2"
-                android:textSize="16sp"
+                android:layout_below="@+id/sun_sub_title_2"
+                android:layout_centerHorizontal="false"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:text="@string/sun_description_2"
-                android:layout_below="@+id/sun_sub_title_2"
-                android:layout_centerHorizontal="false"/>
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/button_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/sun_description_2"
+                android:layout_centerHorizontal="true"
                 android:layout_marginLeft="7dp"
                 android:layout_marginTop="4dp"
-                android:text="@string/button_1"
-                android:layout_below="@+id/sun_description_2"
-                android:layout_centerHorizontal="true"/>
-
+                android:text="@string/button_1" />
         </RelativeLayout>
-
     </FrameLayout>
 
 </ScrollView>
