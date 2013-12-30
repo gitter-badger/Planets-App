@@ -1,0 +1,95 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView3"
+    android:padding="10dp"
+    android:layout_gravity="top">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.andrewq.planets.FragmentC">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/venus_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold|italic"
+                android:textSize="30sp"
+                android:text="@string/venus_title"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:id="@+id/venus"
+                android:layout_below="@+id/venus_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/venus"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/venus_sub_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="4dp"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:text="@string/venus_sub_title_1"
+                android:layout_below="@+id/venus"/>
+
+
+            <TextView
+                android:id="@+id/venus_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                android:text="@string/venus_description"
+                android:layout_below="@+id/venus_sub_title_1"/>
+
+            <TextView
+                android:id="@+id/venus_sub_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:text="@string/venus_sub_title_2"
+                android:layout_below="@id/venus_description"/>
+
+            <TextView
+                android:id="@+id/venus_description_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                android:text="@string/venus_description_2"
+                android:layout_below="@+id/venus_sub_title_2"/>
+
+            <Button
+                android:id="@+id/button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/button_3"
+                android:layout_below="@+id/venus_description_2"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</ScrollView>
