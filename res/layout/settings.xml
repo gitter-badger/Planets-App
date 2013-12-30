@@ -2,27 +2,27 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="10dp">
+    android:padding="8dp">
 
-    <PreferenceCategory android:title="General">
+    <PreferenceCategory android:title="@string/pref_cate_title_1">
 
         <Preference
             android:summary="Tap here to rate this application on the play store. All feedback is appreciated."
-            android:title="Rate on the Play Store">
+            android:title="@string/pref_1">
             <intent android:action="android.intent.action.VIEW"
                 android:data="https://play.google.com/store/apps/details?id=com.andrewq.planets" />
         </Preference>
 
         <Preference
             android:summary="Tap here to view other apps from this developer."
-            android:title="Other Apps">
+            android:title="@string/pref_2">
             <intent android:action="android.intent.action.VIEW"
                 android:data="https://play.google.com/store/apps/developer?id=Andrew+Q" />
         </Preference>
 
         <Preference
             android:summary="Tap here to donate to the developer."
-            android:title="Donate">
+            android:title="@string/pref_3">
             <intent android:action="android.intent.action.VIEW"
                 android:data="https://play.google.com/store/apps/details?id=com.andrewq.donations" />
         </Preference>

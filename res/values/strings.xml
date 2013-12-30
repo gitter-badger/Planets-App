@@ -8,6 +8,12 @@
     <string name="action_about">About</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Preferences Titles -->
+    <string name="pref_cate_title_1">General</string>
+    <string name="pref_1">Rate on the Play Store</string>
+    <string name="pref_2">Other Apps</string>
+    <string name="pref_3">Donate</string>
+    
     <!-- Accessibility Titles -->
     <string name="sun_image">Picture of Sun</string>
     <string name="mercury_image">Picture of Mercury</string>
