@@ -24,7 +24,7 @@
             android:summary="Tap here to donate to the developer."
             android:title="@string/pref_3">
             <intent android:action="android.intent.action.VIEW"
-                android:data="https://play.google.com/store/apps/details?id=com.andrewq.donations" />
+                android:data="https://play.google.com/store/apps/details?id=com.andrewq.donate" />
         </Preference>
 
     </PreferenceCategory>
