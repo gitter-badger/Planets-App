@@ -9,7 +9,7 @@
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="pref_wakelock"
-            android:summary="When checked, screen will stay wake for reading."
+            android:summary="When checked, screen will stay on indefinately until exit."
             android:title="@string/pref_4" />
 		
     </PreferenceCategory>
