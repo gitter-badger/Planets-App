@@ -5,6 +5,16 @@
     android:padding="8dp">
 
     <PreferenceCategory android:title="@string/pref_cate_title_1">
+        
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_wakelock"
+            android:summary="When checked, screen will stay wake for reading."
+            android:title="@string/pref_4" />
+		
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/pref_cate_title_2">
 
         <Preference
             android:summary="Tap here to rate this application on the play store. All feedback is appreciated."

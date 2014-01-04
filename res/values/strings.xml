@@ -10,9 +10,11 @@
 
     <!-- Preferences Titles -->
     <string name="pref_cate_title_1">General</string>
+    <string name="pref_cate_title_2">Other</string>
     <string name="pref_1">Rate on the Play Store</string>
     <string name="pref_2">Other Apps</string>
     <string name="pref_3">Donate</string>
+    <string name="pref_4">Keep Screen Awake</string>
     
     <!-- Accessibility Titles -->
     <string name="sun_image">Picture of Sun</string>
