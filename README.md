@@ -1,9 +1,7 @@
 <h1><b>Welcome to the Planets README</b></h1>
 
-Planets is an application which uses a scrollable-tabbed layout to display information about all the planets in the solar system. It is currently in BETA and I am looking for testers across the board. If your interested please join the Google+ community (See [Helpful Links](https://github.com/AMQTech/Planets#helpful-links)). <br>
-Once you've joined, you'll find the link to the testing sign up. There you can become a tester and then head over to the listing on Google Play and dowload the app. YOU MUST CLICK BECOME A TESTER FIRST! Otherwise if you head to the listing before becoming one, you'll get a 404 error. <br>
-After you've downloaded the app, please head back to the Play Store and leave a review as well as a +1. If you would like to become a contributer to my app, please do a pull request and contact me before you make changes. <br>
-Also note that some of the planet details have not been filled in completely. That is because the app is in BETA and is still in the works. Try not to mention that in ratings because I'm fully aware of it.
+Planets is an application which uses a scrollable-tabbed layout to display information about all the planets in the solar system. Planets is now in production and open to the general public. It is still undergoing development but I want it out in production for ratings and feedback. The Google+ community (See [Helpful Links](https://github.com/AMQTech/Planets#helpful-links)) is still active so feel free to join. <br>
+After you've downloaded the app, please head back to the Play Store and leave a review as well as a +1. If you would like to become a contributer to my app, please do a pull request and contact me before you make changes.
 
 <h2><b>License</b></h2>
 
@@ -195,7 +193,7 @@ Also note that some of the planet details have not been filled in completely. Th
             same "printed page" as the copyright notice for easier
             identification within third-party archives.
       
-         Copyright {2013-2014} {Andrew Quebe}
+         Copyright {2014} {Andrew Quebe}
       
          Licensed under the Apache License, Version 2.0 (the "License");
          you may not use this file except in compliance with the License.
@@ -212,4 +210,4 @@ Also note that some of the planet details have not been filled in completely. Th
 <h2><b>Helpful Links</b></h2>
 > [Google+ Community](https://plus.google.com/u/0/communities/105711742765525315663) <br>
 > [View Raw LICENSE File](https://raw.github.com/AMQTech/Planets/master/License) <br>
-> [Google Play Link (Not available while in BETA)]()
+> [Google Play Link ](https://play.google.com/store/apps/details?id=com.andrewq.planets)
