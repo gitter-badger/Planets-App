@@ -15,7 +15,7 @@
     <string name="pref_2">Other Apps</string>
     <string name="pref_3">Donate</string>
     <string name="pref_4">Keep Screen Awake</string>
-    
+
     <!-- Accessibility Titles -->
     <string name="sun_image">Picture of Sun</string>
     <string name="mercury_image">Picture of Mercury</string>
@@ -141,8 +141,27 @@ Of all the planets in our solar system, the Earth has the greatest density:
 This varies according to the part of the planet; for example, the metallic core is denser than the crust. The average density of the Earth is approximately 5.52 grams per cubic centimetre.</string>
     <string name="mars_title">Mars</string>
     <string name="mars_sub_title_1">Specific Information:</string>
-    <string name="mars_description">Mars Description</string>
+    <string name="mars_description">Mass: 641,693,000,000,000 billion kg (0.107 x Earth)\nEquatorial Diameter: 6,805\nPolar Diameter: 6,755\nEquatorial Circumference: 21,297 kmKnown Satellites: 2\nNotable Satellites: Phobos and Deimos\nOrbit Distance: 227,943,824 km (1.38 AU)\nOrbit Period: 686.98 Earth days (1.88 Earth years)\nSurface Temperature: -87 to -5 °C\nFirst Record: 2nd millennium BC\nRecorded By: Egyptian astronomers</string>
     <string name="mars_sub_title_2">General Information:</string>
-    <string name="mars_description_2">Description 2</string>
+    <string name="mars_description_2" formatted="false">Mars and Earth have approximately the same landmass:
+Even though Mars has only has 15% of the Earth’s volume and just over 10% of the Earth’s, around two thirds of the Earths surface is covered in water. Martian surface gravity is only 37% of Earth’s (meaning you could leap nearly three times higher on Mars).
+
+Mars is home to the tallest mountain in the solar system.
+Olympus Mons, a shield volcano, is 21km high and 600km in diameter. Despite having formed over billions of years, evidence from volcanic lava flows is so recent many scientists believe it could still be active.
+
+Only 16 missions to Mars have been successful.
+Including orbiters, landers and rovers there have been 39 missions to Mars, not including flybys or the attempt to return a sample of Phobos. Since the first, USSR’s Marsnik 1, was launched in 1960. Europe’s Exobiology on Mars program (scheduled launch 2016) plans to: search for possible traces of Martian life; study the surface environment; map potential hazards to manned missions in the future and begin preparations for an eventual return flight.
+
+Mars has the largest dust storms in the solar system:
+They can last for months and cover the entire planet on. The seasons are extreme because its elliptical, oval-shaped orbital path around the sun is more elongated than most other planets in the solar system.
+
+On Mars the Sun appears about half the size as it does on Earth:
+At the closest point to the Sun, the Martian southern hemisphere leans towards the Sun, causing a short, intensely hot summer, while the northern hemisphere endures a brief, cold winter: at its farthest point from the Sun, the Martian northern hemisphere leans towards the Sun, causing a long, mild summer, while the southern hemisphere endures a lengthy, cold winter.
+
+Pieces of Mars have fallen to Earth:
+Scientists have found tiny traces of Martian atmosphere within meteorites violently ejected from Mars, then orbiting the solar system amongst galactic debris for millions of years, before crash landing on Earth. This allowed scientists to begin studying Mars prior to launching space missions.
+
+Mars takes its name from the Roman god of war:
+The ancient Greeks called the planet Ares, after their god of war; the Romans then did likewise, associating the planet’s blood-red colour with Mars, their own god of war. Interestingly, other ancient cultures also focused on colour – to China’s astronomers it was ‘the fire star’, whilst Egyptian priests called on ‘Her Desher’, or ‘the red one’. The red colour Mars is known for is due to the rock and dust covering its surface being rich in iron.</string>
 
 </resources>

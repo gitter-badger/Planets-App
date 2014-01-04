@@ -29,13 +29,13 @@ public final class R {
         public static final int venus=0x7f020006;
     }
     public static final class id {
-        public static final int action_about=0x7f080027;
-        public static final int action_settings=0x7f080028;
+        public static final int action_about=0x7f08002a;
+        public static final int action_settings=0x7f08002b;
         public static final int button_1=0x7f080009;
         public static final int button_2=0x7f080011;
         public static final int button_3=0x7f080019;
         public static final int button_4=0x7f080021;
-        public static final int button_5=0x7f080026;
+        public static final int button_5=0x7f080029;
         public static final int earth=0x7f08001c;
         public static final int earth_description=0x7f08001e;
         public static final int earth_description_2=0x7f080020;
@@ -43,7 +43,10 @@ public final class R {
         public static final int earth_sub_title_2=0x7f08001f;
         public static final int earth_title=0x7f08001b;
         public static final int mars=0x7f080024;
-        public static final int mars_description=0x7f080025;
+        public static final int mars_description=0x7f080026;
+        public static final int mars_description_2=0x7f080028;
+        public static final int mars_sub_title_1=0x7f080025;
+        public static final int mars_sub_title_2=0x7f080027;
         public static final int mars_title=0x7f080023;
         public static final int mercury=0x7f08000c;
         public static final int mercury_description=0x7f08000e;
