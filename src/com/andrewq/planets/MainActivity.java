@@ -11,7 +11,6 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
@@ -26,20 +25,11 @@ public class MainActivity extends FragmentActivity {
 		setContentView(R.layout.activity_main);
 		viewPager = (ViewPager) findViewById(R.id.pager);
 		viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
-
-		// Code needs work for compatibility issues
-		/*
-		 * Context context = getApplicationContext(); CharSequence text =
-		 * "Welcome!"; int duration = Toast.LENGTH_SHORT;
-		 * 
-		 * Toast toast = Toast.makeText(context, text, duration); toast.show();
-		 */
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
-		Log.d("AQ", "onResume() has been called");
 	}
 
 	@Override
@@ -127,12 +117,18 @@ class MyAdapter extends FragmentStatePagerAdapter {
 		if (arg0 == 4) {
 			fragment = new FragmentE();
 		}
+		if (arg0 == 5) {
+			fragment = new FragmentF();
+		}
+		if (arg0 == 6) {
+			fragment = new FragmentG();
+		}
 		return fragment;
 	}
 
 	@Override
 	public int getCount() {
-		return 5;
+		return 7;
 	}
 
 	@Override
@@ -151,6 +147,12 @@ class MyAdapter extends FragmentStatePagerAdapter {
 		}
 		if (position == 4) {
 			return "Mars";
+		}
+		if (position == 5) {
+			return "Jupiter";
+		}
+		if (position == 6) {
+			return "Saturn";
 		}
 		return null;
 	}
