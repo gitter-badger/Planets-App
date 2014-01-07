@@ -11,14 +11,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 public class FragmentA extends Fragment {
-
+	
 	Button button;
 	public Vibrator v;
 
 	@Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
-
+		
 		button = (Button) getView().findViewById(R.id.button_1);
 
 		button.setOnClickListener(new View.OnClickListener() {
