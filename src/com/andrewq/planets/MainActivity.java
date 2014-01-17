@@ -123,12 +123,18 @@ class MyAdapter extends FragmentStatePagerAdapter {
 		if (arg0 == 6) {
 			fragment = new FragmentG();
 		}
+		if (arg0 == 7) {
+			fragment = new FragmentH();
+		}
+		if (arg0 == 8) {
+			fragment = new FragmentI();
+		}
 		return fragment;
 	}
 
 	@Override
 	public int getCount() {
-		return 7;
+		return 9;
 	}
 
 	@Override
@@ -153,6 +159,12 @@ class MyAdapter extends FragmentStatePagerAdapter {
 		}
 		if (position == 6) {
 			return "Saturn";
+		}
+		if (position == 7) {
+			return "Uranus";
+		}
+		if (position == 8) {
+			return "Neptune";
 		}
 		return null;
 	}

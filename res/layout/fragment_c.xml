@@ -20,8 +20,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:paddingLeft="10dp"
-                android:paddingTop="10dp"
                 android:text="@string/venus_title"
                 android:textSize="30sp"
                 android:textStyle="bold|italic" />

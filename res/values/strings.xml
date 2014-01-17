@@ -30,6 +30,8 @@
     <string name="mars_image">Picture of Mars</string>
     <string name="jupiter_image">Picture of Jupiter</string>
     <string name="saturn_image">Picture of Saturn</string>
+    <string name="uranus_image">Picture of Uranus</string>
+    <string name="neptune_image">Picture of Uranus</string>
 
     <!-- Sources -->
     <string name="button_1">Source</string>
@@ -39,6 +41,11 @@
     <string name="button_5">Source</string>
     <string name="button_6">Source</string>
     <string name="button_7">Source</string>
+    <string name="button_8">Source</string>
+    <string name="button_9">Source</string>
+    
+    <!-- Moons -->
+    <string name="earth_moon">Satellite (1)</string>
 
     <!-- Objects Names -->
     <string name="sun_title">Sun (Sol)</string>
@@ -191,5 +198,27 @@ Jupiter is the third brightest object in the solar system – It is one of five 
     <string name="saturn_description">Mass: 568,319,000,000,000,000 billion kg (95.16 x Earth)\nEquatorial Diameter: 120,536 km\nPolar Diameter: 108,728 km\nEquatorial Circumference: 365,882 km\nKnown Satellites: 62\nNotable Satellites: Titan, Rhea and Enceladus\nOrbit Distance: 1,426,666,422 km (9.58 AU)\nOrbit Period: 10,755.70 Earth days (29.45 Earth years)\nSurface Temperature: -139 °C\nFirst Record: 8th century BC\nRecorded By: Assyrians</string>
     <string name="saturn_sub_title_2">General Information:</string>
     <string name="saturn_description_2" formatted="false">Saturn is the sixth planet from the Sun and is named after the Roman god of wealth. Saturn is the second largest planet in the solar system and is best known for its fabulous rings. The rings were not known to exist until Galileo first observed them in 1610.</string>
+    <string name="uranus_title">Uranus</string>
+    <string name="uranus_sub_title_1">Specific Information:</string>
+    <string name="uranus_description">Mass: 86,810,300,000,000,000 billion kg (14.536 x Earth)\nEquatorial Diameter: 51,118 km\nPolar Diameter: 49,946 km\nEquatorial Circumference: 159,354 km\nKnown Satellites: 27\nNotable Satellites: Oberon, Titania, Miranda, Ariel and Umbriel\nOrbit Distance: 2,870,658,186 km (19.22 AU)\nOrbit Period: 30,687.15 Earth days (84.02 Earth years)\nSurface Temperature: -197 °C\nDiscover Date: March 13th 1781\nDiscovered By: William Herschel</string>
+    <string name="uranus_sub_title_2">General Information:</string>
+    <string name="uranus_description_2" formatted="false">Uranus is the seventh planet from the Sun and was the first planet to be discovered with the use of a telescope. Uranus’ most unique feature is that its axis sideways in comparison to other planets i.e. its north and south poles are in line with where other planets have their equators. Uranus is named after the Greek god of the sky.
+        Uranus was discovered by William Herschel on the 13th of March 1781 who initially believed it was a comet.
+William Herschel tried to have his discovery named Georgian Sidus after King George III.
+The atmosphere of Uranus is composed mostly of Hydrogen and Helium with a small amount of Methane (H2, He and CH4).
+There are several different pronunciations of Uranus the most common being “u-ra-nus” followed by “ur-unus”.
+On the surface of Uranus gravity would be 89% of that on Earth (however as a gas planet with a liquid centre Uranus does not have definable surface).
+The minimum atmospheric temperature of Uranus is -224°C making it the coldest planet in the solar system.
+Uranus’ moons are named after characters created by William Shakespeare and Alaxander Pope these include Oberon, Titania and Miranda.
+The only spacecraft to visit Uranus is Voyager 2 which passed in 1986 passing at a distance of 81,500 km.
+Uranus has two sets of rings, nine inner rings and two outer rings.
+The first set of rings was discovered in 1977 and the second set was discovered in 2003 by the Hubble Space Telescope.</string>
+    <string name="neptune_title">Neptune</string>
+    <string name="neptune_sub_title_1">Specific Information:</string>
+    <string name="neptune_description">Mass: 102,410,000,000,000,000 billion kg (17.15x Earth)\nEquatorial Diameter: 49,528 km\nPolar Diameter: 48,682 km\nEquatorial Circumference: 155,600 km\nKnown Satellites: 14\nNotable Satellites: Tritan\nOrbit Distance: 4,498,396,441 km (30.10 AU)\nOrbit Period: 60,190.03 Earth days (164.79 Earth years)\nSurface Temperature: -201 °C\nDiscover Date: September 23rd 1846\nDiscovered By: Urbain Le Verrier and Johann Galle</string>
+    <string name="neptune_sub_title_2">General Information:</string>
+    <string name="neptune_description_2" formatted="false">Neptune is the eighth planet from the Sun and the smallest of the gas giants. Neptune was the first planet found by mathematical prediction after unexpected changes in the orbit of Uranus were observed. Neptune is named after the Roman god of the sea.
+        Neptune has only been passed by one spacecraft, Voyager 2 which flew by on the 25th of August 1989.
+Although smaller in diameter than Uranus, Neptune has a greater mass.</string>
 
 </resources>

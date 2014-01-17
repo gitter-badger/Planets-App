@@ -3,8 +3,7 @@
     android:id="@+id/scrollView1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="top"
-    android:paddingBottom="1dp" >
+    android:layout_gravity="top" >
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -21,8 +20,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:paddingBottom="3dp"
-                android:paddingTop="10dp"
                 android:text="@string/sun_title"
                 android:textSize="30sp"
                 android:textStyle="bold|italic" />
