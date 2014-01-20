@@ -12,12 +12,14 @@ import android.widget.Button;
 public class FragmentD extends Fragment {
 
 	Button button;
+	Button button2;
 
 	@Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
 
 		button = (Button) getView().findViewById(R.id.button_4);
+		button2 = (Button) getView().findViewById(R.id.earth_satellite);
 
 		button.setOnClickListener(new View.OnClickListener() {
 
@@ -28,6 +30,15 @@ public class FragmentD extends Fragment {
 				Intent i = new Intent(Intent.ACTION_VIEW);
 				i.setData(Uri.parse(url));
 				startActivity(i);
+			}
+		});
+
+		button2.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getActivity(), SatelliteEarth.class);
+				startActivity(intent);
 			}
 		});
 	}

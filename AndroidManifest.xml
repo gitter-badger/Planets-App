@@ -42,5 +42,20 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        
+        <!-- Earth Moon Activity -->
+        <activity android:name="com.andrewq.planets.SatelliteEarth"
+            android:label="Moon"
+            android:parentActivityName=".SatelliteEarth"
+            android:screenOrientation="sensor">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.andrewq.planets.MainActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

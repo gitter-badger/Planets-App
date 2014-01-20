@@ -83,6 +83,15 @@
                 android:layout_below="@+id/earth_description_2"
                 android:layout_centerHorizontal="true"
                 android:text="@string/button_4" />
+
+            <Button
+                android:id="@+id/earth_satellite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/earth_description_2"
+                android:layout_toLeftOf="@+id/button_4"
+                android:layout_centerHorizontal="true"
+                android:text="@string/earth_satellite" />
         </RelativeLayout>
     </FrameLayout>
 
