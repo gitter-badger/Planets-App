@@ -87,14 +87,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/button_4" />
+                    android:text="@string/earth_satellite" />
 
                 <Button
                     android:id="@+id/button_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/earth_satellite" />
+                    android:text="@string/button_4" />
             </LinearLayout>
         </RelativeLayout>
     </RelativeLayout>
