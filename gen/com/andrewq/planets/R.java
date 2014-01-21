@@ -1175,7 +1175,6 @@ containing a value of this type.
         public static final int earth_description_2=0x7f090045;
         public static final int earth_image=0x7f09001b;
         /**  Moons 
- Moons 
          */
         public static final int earth_satellite=0x7f090021;
         public static final int earth_sub_title_1=0x7f090042;
