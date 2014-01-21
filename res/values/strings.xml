@@ -37,10 +37,16 @@
     <string name="button_7">Source</string>
     <string name="button_8">Source</string>
     <string name="button_9">Source</string>
-    
+
     <!-- Moons -->
     <string name="earth_satellite">Satellite (1)</string>
-    <string name="earth_satellite_title">Moon</string>
+    <string name="moon_title">Moon</string>
+    <string name="moon_image">Picture of the Moon</string>
+    <string name="moon_sub_title_1">Specific Information:</string>
+    <string name="moon_description">Circumference at Equator: 10,917.0 km\nDiameter: 3,475 km\nMass: 73,476,730,924,573,500 million kg (0.0123 x Earth)\nAverage Distance from Earth: 384,400 km\nLength of Orbit: 27.3 Earth days\nSurface Temperature: -233 to 123 °C</string>
+    <string name="moon_sub_title_2">General Information:</string>
+    <string name="moon_description_2">The Moon (or Luna) is the Earth’s only natural satellite and was formed 4.6 billion years ago around some 30–50 million years after the formation of the solar system. The Moon is in synchronous rotation with Earth meaning the same side is always facing the Earth. The first unmanned mission to the Moon was in 1959 by the Soviet Lunar Program with the first manned landing being Apollo 11 in 1969.</string>
+    <string name="moon_satellite">Source</string>
 
     <!-- Objects Names -->
     <string name="sun_title">Sun (Sol)</string>
