@@ -13,8 +13,7 @@ import android.widget.Button;
 public class FragmentA extends Fragment {
 	
 	Button button;
-	public Vibrator v;
-
+//test comment
 	@Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
