@@ -92,6 +92,7 @@
                 android:layout_below="@+id/mercury_description_2"
                 android:layout_centerHorizontal="true"
                 android:text="@string/button_2" />
+
         </RelativeLayout>
     </FrameLayout>
 
