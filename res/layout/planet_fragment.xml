@@ -30,8 +30,7 @@
                 android:layout_height="match_parent"
                 android:layout_below="@+id/planet_title"
                 android:layout_centerHorizontal="true"
-                android:contentDescription="@string/sun_image"
-                android:padding="5dp" />
+                android:contentDescription="@string/sun_image" />
 
             <TextView
                 android:id="@+id/sub_title_1"
