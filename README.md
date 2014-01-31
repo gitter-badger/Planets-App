@@ -3,7 +3,11 @@
 Planets is an application which uses a scrollable-tabbed layout to display information about all the planets in the solar system. Planets is now in production and open to the general public. It is still undergoing development but I want it out in production for ratings and feedback. The Google+ community (See [Helpful Links](https://github.com/AMQTech/Planets#helpful-links)) is still active so feel free to join. <br>
 After you've downloaded the app, please head back to the Play Store and leave a review as well as a +1. If you would like to become a contributer to my app, please do a pull request and contact me before you make changes.
 
+<<<<<<< HEAD
 ![Nexus 4 Rendered](https://raw2.github.com/AMQTech/Graphics/master/Renders/Nexus_4_Planets.jpg?token=6075028__eyJzY29wZSI6IlJhd0Jsb2I6QU1RVGVjaC9HcmFwaGljcy9tYXN0ZXIvUmVuZGVycy9OZXh1c180X1BsYW5ldHMuanBnIiwiZXhwaXJlcyI6MTM5MTI4ODg3OX0%3D--4e9e954ff670698e52662d96b33fd6aae34ad9d3)
+=======
+![Nexus 4 Rendered](https://raw2.github.com/AMQTech/Graphics/master/Renders/Nexus_4_Planets.jpg?token=6075028__eyJzY29wZSI6IlJhd0Jsb2I6QU1RVGVjaC9HcmFwaGljcy9tYXN0ZXIvUmVuZGVycy9OZXh1c180X1BsYW5ldHMuanBnIiwiZXhwaXJlcyI6MTM5MTM4MjYzNH0%3D--3d8df89fa59903497d55b111d01483e7b03adae7)
+>>>>>>> 42a85b023ad8f88d3475c91d29ef3ef65a745ef2
 
 <h2><b>License</b></h2>
 
