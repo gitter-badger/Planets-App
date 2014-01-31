@@ -23,8 +23,6 @@ OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
 
 package com.andrewq.planets;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -32,7 +30,6 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
@@ -48,6 +45,7 @@ public class Main extends ActionBarActivity implements NavigationDrawerFragment.
 	private ListView mLeftDrawer;
 	private ActionBarDrawerToggle mDrawerToggle;
 
+	@SuppressWarnings("unused")
 	private CharSequence mTitle;
 	private String[] mFragmentTitles;
     private NavigationDrawerFragment mNavigationDrawerFragment;
@@ -70,6 +68,7 @@ public class Main extends ActionBarActivity implements NavigationDrawerFragment.
 		
 	}
 
+	@SuppressWarnings("unused")
 	@Override
 	public boolean onPrepareOptionsMenu(Menu menu) {
 		boolean drawerOpen = mDrawerLayout.isDrawerOpen(mLeftDrawer);
@@ -126,6 +125,7 @@ public class Main extends ActionBarActivity implements NavigationDrawerFragment.
 				}).show();
 	}
 
+	@SuppressWarnings("unused")
 	private class DrawerItemClickListener implements
 			ListView.OnItemClickListener {
 		@Override
