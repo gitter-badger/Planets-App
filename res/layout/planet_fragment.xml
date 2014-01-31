@@ -26,11 +26,12 @@
 
             <ImageView
                 android:id="@+id/planet_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_below="@+id/planet_title"
                 android:layout_centerHorizontal="true"
-                android:contentDescription="@string/sun_image" />
+                android:contentDescription="@string/sun_image"
+                android:padding="5dp" />
 
             <TextView
                 android:id="@+id/sub_title_1"
@@ -40,7 +41,6 @@
                 android:layout_centerHorizontal="false"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
-                android:paddingTop="5dp"
                 android:text="@string/sub_title"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />

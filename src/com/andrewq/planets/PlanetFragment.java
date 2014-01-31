@@ -1,6 +1,5 @@
 package com.andrewq.planets;
 
-
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
@@ -15,32 +14,30 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class PlanetFragment extends Fragment {
-	
+
 	private Button button;
 	private TextView titleView;
 	private TextView descriptionText;
 	private TextView bodyText;
 	private ImageView imageView;
-	
+
 	private String url;
 	private String title;
 	private String[] planet;
 	private String description;
 	private String body;
-	
+
 	@Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
-		
+
 		button = (Button) view.findViewById(R.id.button_source);
-		titleView  = (TextView)view.findViewById(R.id.planet_title);
-		descriptionText  = (TextView)view.findViewById(R.id.description_text);
-		bodyText  = (TextView)view.findViewById(R.id.body_text);
-		imageView = (ImageView)view.findViewById(R.id.planet_image);
-		
-		
+		titleView = (TextView) view.findViewById(R.id.planet_title);
+		descriptionText = (TextView) view.findViewById(R.id.description_text);
+		bodyText = (TextView) view.findViewById(R.id.body_text);
+		imageView = (ImageView) view.findViewById(R.id.planet_image);
+
 		Bundle args = getArguments();
-		
 
 		planet = args.getStringArray(MainActivity.DESCRIPTIONS);
 		title = args.getString(MainActivity.TITLE);
@@ -49,15 +46,18 @@ public class PlanetFragment extends Fragment {
 		url = planet[2];
 		Resources res = getActivity().getResources();
 		String mDrawableName = planet[3];
-		mDrawableName = mDrawableName.substring(mDrawableName.lastIndexOf("/") + 1,mDrawableName.lastIndexOf("."));
-		int resID = res.getIdentifier(mDrawableName , "drawable", getActivity().getPackageName());
+		mDrawableName = mDrawableName.substring(
+				mDrawableName.lastIndexOf("/") + 1,
+				mDrawableName.lastIndexOf("."));
+		int resID = res.getIdentifier(mDrawableName, "drawable", getActivity()
+				.getPackageName());
 		Drawable drawable = res.getDrawable(resID);
-		imageView.setImageDrawable(drawable );
-		
+		imageView.setImageDrawable(drawable);
+
 		titleView.setText(title);
 		descriptionText.setText(description);
 		bodyText.setText(body);
-		
+
 		button.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -68,11 +68,11 @@ public class PlanetFragment extends Fragment {
 			}
 		});
 	}
-	
+
 	public PlanetFragment() {
 		// Required empty public constructor
 	}
-	
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
