@@ -19,29 +19,12 @@ public class MainActivity extends FragmentActivity {
 
 	ViewPager viewPager;
 
-	// constants which act as keys for sending Bundle values to PlanetFragment
-	public static final String TITLE = "title";
-	public static final String DESCRIPTIONS = "descriptions";
-
-	// set up arrays from String resources in order to dynamically build a
-	// PlanetFragment. These get passed in via the MyAdapter constructor
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		viewPager = (ViewPager) findViewById(R.id.pager);
-		String[] sun = getResources().getStringArray(R.array.Sun);
-		String[] mercury = getResources().getStringArray(R.array.Mercury);
-		String[] venus = getResources().getStringArray(R.array.Venus);
-		String[] earth = getResources().getStringArray(R.array.Earth);
-		String[] mars = getResources().getStringArray(R.array.Mars);
-		String[] jupiter = getResources().getStringArray(R.array.Jupiter);
-		String[] saturn = getResources().getStringArray(R.array.Saturn);
-		String[] uranus = getResources().getStringArray(R.array.Uranus);
-		String[] neptune = getResources().getStringArray(R.array.Neptune);
-
-		viewPager.setAdapter(new MyAdapter(getSupportFragmentManager(), sun,
-				mercury, venus, earth, mars, jupiter, saturn, uranus, neptune));
+		viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
 	}
 
 	@Override
@@ -77,10 +60,7 @@ public class MainActivity extends FragmentActivity {
 		SharedPreferences getPrefs = PreferenceManager
 				.getDefaultSharedPreferences(getBaseContext());
 		boolean box = getPrefs.getBoolean("pref_wakelock", true);
-		// shorthand for what you previously had here. When you evaluate an IF
-		// statement it checks to see if what you have placed inside the
-		// parenthesis evaluates to true or false
-		if (box) {
+		if (box == true) {
 			getWindow()
 					.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		} else {
@@ -115,78 +95,41 @@ public class MainActivity extends FragmentActivity {
 
 class MyAdapter extends FragmentStatePagerAdapter {
 
-	private static final String[] PLANETS = { "Sun", "Mercury", "Venus",
-			"Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" };
-	private final String[] SUN;
-	private final String[] MERCURY;
-	private final String[] VENUS;
-	private final String[] EARTH;
-	private final String[] MARS;
-	private final String[] JUPITER;
-	private final String[] SATURN;
-	private final String[] URANUS;
-	private final String[] NEPTUNE;
-
-	public MyAdapter(FragmentManager fm, String[] sun, String[] mercury,
-			String[] venus, String[] earth, String[] mars, String[] jupiter,
-			String[] saturn, String[] uranus, String[] neptune) {
+	public MyAdapter(FragmentManager fm) {
 		super(fm);
-		this.SUN = sun;
-		this.MERCURY = mercury;
-		this.VENUS = venus;
-		this.EARTH = earth;
-		this.MARS = mars;
-		this.JUPITER = jupiter;
-		this.SATURN = saturn;
-		this.URANUS = uranus;
-		this.NEPTUNE = neptune;
 	}
 
-	// Use one PlanetFragment and dynamically build it according to the items in
-	// the corresponding array.
 	@Override
-	public Fragment getItem(int position) {
-		Fragment fragment = new PlanetFragment();
-		Bundle bundle = new Bundle();
-		String planet = getPlanet(position);
-		String[] planetDetails = getPlanetDetails(planet);
-		bundle.putString(MainActivity.TITLE, PLANETS[position]);
-		bundle.putStringArray(MainActivity.DESCRIPTIONS, planetDetails);
-		fragment.setArguments(bundle);
-		return fragment;
-	}
-
-	// Find from the PLANETS array the item at index "position"
-	public String getPlanet(int position) {
-		String planet = PLANETS[position];
-		return planet;
-	}
-
-	// Use the previously found item in the PLANETS array and return the array
-	// with that planet name
-	public String[] getPlanetDetails(String planet) {
-		String[] planetDetails = null;
-		if (planet.equals("Sun")) {
-			return SUN;
-		} else if (planet.equals("Mercury")) {
-			return MERCURY;
-		} else if (planet.equals("Venus")) {
-			return VENUS;
-		} else if (planet.equals("Earth")) {
-			return EARTH;
-		} else if (planet.equals("Mars")) {
-			return MARS;
-		} else if (planet.equals("Jupiter")) {
-			return JUPITER;
-		} else if (planet.equals("Saturn")) {
-			return SATURN;
-		} else if (planet.equals("Uranus")) {
-			return URANUS;
-		} else if (planet.equals("Neptune")) {
-			return NEPTUNE;
+	public Fragment getItem(int arg0) {
+		Fragment fragment = null;
+		if (arg0 == 0) {
+			fragment = new FragmentA();
 		}
-
-		return planetDetails;
+		if (arg0 == 1) {
+			fragment = new FragmentB();
+		}
+		if (arg0 == 2) {
+			fragment = new FragmentC();
+		}
+		if (arg0 == 3) {
+			fragment = new FragmentD();
+		}
+		if (arg0 == 4) {
+			fragment = new FragmentE();
+		}
+		if (arg0 == 5) {
+			fragment = new FragmentF();
+		}
+		if (arg0 == 6) {
+			fragment = new FragmentG();
+		}
+		if (arg0 == 7) {
+			fragment = new FragmentH();
+		}
+		if (arg0 == 8) {
+			fragment = new FragmentI();
+		}
+		return fragment;
 	}
 
 	@Override
@@ -196,6 +139,33 @@ class MyAdapter extends FragmentStatePagerAdapter {
 
 	@Override
 	public CharSequence getPageTitle(int position) {
-		return PLANETS[position];
+		if (position == 0) {
+			return "Sun";
+		}
+		if (position == 1) {
+			return "Mercury";
+		}
+		if (position == 2) {
+			return "Venus";
+		}
+		if (position == 3) {
+			return "Earth";
+		}
+		if (position == 4) {
+			return "Mars";
+		}
+		if (position == 5) {
+			return "Jupiter";
+		}
+		if (position == 6) {
+			return "Saturn";
+		}
+		if (position == 7) {
+			return "Uranus";
+		}
+		if (position == 8) {
+			return "Neptune";
+		}
+		return null;
 	}
 }

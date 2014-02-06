@@ -1,0 +1,89 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.andrewq.planets.FragmentF" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent" >
+
+            <TextView
+                android:id="@+id/jupiter_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/jupiter_title"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:id="@+id/jupiter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jupiter_title"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/jupiter_image"
+                android:src="@drawable/jupiter" />
+
+            <TextView
+                android:id="@+id/jupiter_sub_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jupiter"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="4dp"
+                android:text="@string/jupiter_sub_title_1"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/jupiter_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jupiter_sub_title_1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/jupiter_description"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/jupiter_sub_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jupiter_description"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/jupiter_sub_title_2"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/jupiter_description_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jupiter_sub_title_2"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/jupiter_description_2"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jupiter_description_2"
+                android:layout_centerHorizontal="true"
+                android:text="@string/button_6" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</ScrollView>
