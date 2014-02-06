@@ -24,7 +24,7 @@
                 android:textSize="30sp"
                 android:textStyle="bold|italic"
                 android:text="@string/mercury_title"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true" />
 
             <ImageView
                 android:id="@+id/mercury"
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="3dp"
                 android:src="@drawable/mercury"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true" />
 
             <TextView
                 android:id="@+id/mercury_sub_title_1"
@@ -46,7 +46,7 @@
                 android:textStyle="bold|italic"
                 android:text="@string/mercury_sub_title_1"
                 android:layout_centerHorizontal="false"
-                android:layout_below="@+id/mercury"/>
+                android:layout_below="@+id/mercury" />
 
             <TextView
                 android:id="@+id/mercury_description"
@@ -58,7 +58,7 @@
                 android:textSize="16sp"
                 android:text="@string/mercury_description"
                 android:layout_centerHorizontal="false"
-                android:layout_below="@+id/mercury_sub_title_1"/>
+                android:layout_below="@+id/mercury_sub_title_1" />
 
             <TextView
                 android:id="@+id/mercury_sub_title_2"
@@ -71,7 +71,7 @@
                 android:textStyle="bold|italic"
                 android:text="@string/mercury_sub_title_2"
                 android:layout_centerHorizontal="false"
-                android:layout_below="@+id/mercury_description"/>
+                android:layout_below="@+id/mercury_description" />
 
             <TextView
                 android:id="@+id/mercury_description_2"
@@ -83,7 +83,7 @@
                 android:textSize="16sp"
                 android:text="@string/mercury_description_2"
                 android:layout_centerHorizontal="false"
-                android:layout_below="@+id/mercury_sub_title_2"/>
+                android:layout_below="@+id/mercury_sub_title_2" />
 
             <Button
                 android:id="@+id/button_2"
@@ -91,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/button_2"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/mercury_description_2"/>
+                android:layout_below="@+id/mercury_description_2" />
 
 
         </RelativeLayout>

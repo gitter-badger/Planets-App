@@ -3,17 +3,17 @@
     android:id="@+id/scrollView6"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="top" >
+    android:layout_gravity="top">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context="com.andrewq.planets.FragmentF" >
+        tools:context="com.andrewq.planets.FragmentF">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:ignore="UselessParent" >
+            tools:ignore="UselessParent">
 
             <TextView
                 android:id="@+id/jupiter_title"

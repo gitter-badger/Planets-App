@@ -11,34 +11,34 @@ import android.widget.Button;
 
 public class FragmentC extends Fragment {
 
-	Button button;
+    Button button;
 
-	@Override
-	public void onViewCreated(View view, Bundle savedInstanceState) {
-		super.onViewCreated(view, savedInstanceState);
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-		button = (Button) getView().findViewById(R.id.button_3);
+        button = (Button) getView().findViewById(R.id.button_3);
 
-		button.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {
 
-			@Override
-			public void onClick(View v) {
+            @Override
+            public void onClick(View v) {
 
-				String url = "http://space-facts.com/venus/";
-				Intent i = new Intent(Intent.ACTION_VIEW);
-				i.setData(Uri.parse(url));
-				startActivity(i);
-			}
-		});
-	}
+                String url = "http://space-facts.com/venus/";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
+    }
 
-	public FragmentC() {
-		// Required empty constructor
-	}
+    public FragmentC() {
+        // Required empty constructor
+    }
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		return inflater.inflate(R.layout.fragment_c, container, false);
-	}
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_c, container, false);
+    }
 }
