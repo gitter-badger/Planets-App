@@ -11,34 +11,34 @@ import android.widget.Button;
 
 public class FragmentH extends Fragment {
 
-    Button button;
+	Button button;
 
-    @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+	@Override
+	public void onViewCreated(View view, Bundle savedInstanceState) {
+		super.onViewCreated(view, savedInstanceState);
 
-        button = (Button) getView().findViewById(R.id.button_8);
+		button = (Button) getView().findViewById(R.id.button_8);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+		button.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
 
-                String url = "http://space-facts.com/uranus/";
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-            }
-        });
-    }
+				String url = "http://space-facts.com/uranus/";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);
+			}
+		});
+	}
 
-    public FragmentH() {
-        // Required empty public constructor
-    }
+	public FragmentH() {
+		// Required empty public constructor
+	}
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_h, container, false);
-    }
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		// Inflate the layout for this fragment
+		return inflater.inflate(R.layout.fragment_h, container, false);
+	}
 }

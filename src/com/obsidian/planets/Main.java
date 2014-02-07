@@ -82,11 +82,13 @@ public class Main extends FragmentActivity {
 		mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
 				R.drawable.ic_drawer, R.string.drawer_open,
 				R.string.drawer_close) {
+			@Override
 			public void onDrawerClosed(View v) {
 				getActionBar().setTitle(mTitle);
 				supportInvalidateOptionsMenu();
 			}
 
+			@Override
 			public void onDrawerOpened(View v) {
 				getActionBar().setTitle(mDrawerTitle);
 				supportInvalidateOptionsMenu();
@@ -107,11 +109,13 @@ public class Main extends FragmentActivity {
 		return super.onPrepareOptionsMenu(menu);
 	}
 
+	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.main_menu, menu);
 		return true;
 	}
 
+	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case android.R.id.home:
