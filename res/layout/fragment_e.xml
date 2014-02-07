@@ -3,17 +3,17 @@
     android:id="@+id/scrollView5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="top">
+    android:layout_gravity="top" >
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context="com.andrewq.planets.FragmentE">
+        tools:context="com.andrewq.planets.FragmentE" >
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:ignore="UselessParent">
+            tools:ignore="UselessParent" >
 
             <TextView
                 android:id="@+id/mars_title"
@@ -82,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/mars_description_2"
                 android:layout_centerHorizontal="true"
-                android:text="@string/button_5" />
+                android:text="@string/button_source" />
         </RelativeLayout>
     </FrameLayout>
 

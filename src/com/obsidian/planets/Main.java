@@ -49,6 +49,7 @@ import com.andrewq.planets.FragmentF;
 import com.andrewq.planets.FragmentG;
 import com.andrewq.planets.FragmentH;
 import com.andrewq.planets.FragmentI;
+import com.andrewq.planets.FragmentMain;
 import com.andrewq.planets.R;
 import com.andrewq.planets.Settings;
 
@@ -169,36 +170,35 @@ public class Main extends FragmentActivity {
 		FragmentManager fm = getSupportFragmentManager();
 		switch (position) {
 		case 0:
-			newFragment = new FragmentA();
+			newFragment = new FragmentMain();
 			break;
 		case 1:
-			newFragment = new FragmentB();
-
+			newFragment = new FragmentA();
 			break;
 		case 2:
-			newFragment = new FragmentC();
+			newFragment = new FragmentB();
 			break;
 		case 3:
-			newFragment = new FragmentD();
+			newFragment = new FragmentC();
 			break;
 		case 4:
-			newFragment = new FragmentE();
+			newFragment = new FragmentD();
 			break;
 		case 5:
-			newFragment = new FragmentF();
+			newFragment = new FragmentE();
 			break;
 		case 6:
+			newFragment = new FragmentF();
+			break;
+		case 7:
 			newFragment = new FragmentG();
 			break;
-
-		case 7:
+		case 8:
 			newFragment = new FragmentH();
 			break;
-		case 8:
+		case 9:
 			newFragment = new FragmentI();
-
 			break;
-
 		}
 
 		fm.beginTransaction().replace(R.id.content_frame, newFragment).commit();

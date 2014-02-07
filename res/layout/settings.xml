@@ -1,23 +1,22 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="8dp">
+    android:padding="8dp" >
 
-    <PreferenceCategory android:title="@string/pref_cate_title_1">
+    <PreferenceCategory android:title="@string/pref_cate_title_1" >
 
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="pref_wakelock"
             android:summary="When checked, screen will stay on indefinately until exit."
             android:title="@string/pref_4" />
-
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="@string/pref_cate_title_2">
+    <PreferenceCategory android:title="@string/pref_cate_title_2" >
 
         <Preference
             android:summary="Tap here to rate this application on the play store. All feedback is appreciated."
-            android:title="@string/pref_1">
+            android:title="@string/pref_1" >
 
             <intent
                 android:action="android.intent.action.VIEW"
@@ -26,7 +25,7 @@
 
         <Preference
             android:summary="Tap here to view other apps from this developer."
-            android:title="@string/pref_2">
+            android:title="@string/pref_2" >
 
             <intent
                 android:action="android.intent.action.VIEW"
@@ -35,14 +34,12 @@
 
         <Preference
             android:summary="Tap here to donate to the developer."
-            android:title="@string/pref_3">
+            android:title="@string/pref_3" >
 
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="https://play.google.com/store/apps/details?id=com.andrewq.donate" />
         </Preference>
-
     </PreferenceCategory>
-
 
 </PreferenceScreen>

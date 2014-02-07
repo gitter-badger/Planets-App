@@ -9,6 +9,7 @@
     <string name="action_settings">Settings</string>
 
     <string-array name="fragments">
+        <item>Home</item>
         <item>Sun</item>
         <item>Mercury</item>
         <item>Venus</item>
@@ -50,20 +51,14 @@
     <string name="moon_description">Circumference at Equator: 10,917.0 km\nDiameter: 3,475 km\nMass: 73,476,730,924,573,500 million kg (0.0123 x Earth)\nAverage Distance from Earth: 384,400 km\nLength of Orbit: 27.3 Earth days\nSurface Temperature: -233 to 123 °C</string>
     <string name="moon_sub_title_2">General Information:</string>
     <string name="moon_description_2">The Moon (or Luna) is the Earth’s only natural satellite and was formed 4.6 billion years ago around some 30–50 million years after the formation of the solar system. The Moon is in synchronous rotation with Earth meaning the same side is always facing the Earth. The first unmanned mission to the Moon was in 1959 by the Soviet Lunar Program with the first manned landing being Apollo 11 in 1969.</string>
-    <string name="moon_satellite">Source</string>
+    <string name="moon_button">Satellite (1)</string>
 
     <!-- Sources -->
-    <string name="button_1">Source</string>
-    <string name="button_2">Source</string>
-    <string name="button_3">Source</string>
-    <string name="button_4">Source</string>
-    <string name="button_5">Source</string>
-    <string name="button_6">Source</string>
-    <string name="button_7">Source</string>
-    <string name="button_8">Source</string>
-    <string name="button_9">Source</string>
+    <string name="button_source">Source</string>
 
     <!-- Objects Names -->
+    <string name="home_title">Home</string>
+    <string name="home_info_1">Welcome to Planets! The app that gives you planet details with the tap of your finger. </string>
     <string name="sun_title">Sun (Sol)</string>
     <string name="sun_sub_title_1">Specific Information:</string>
     <string name="sun_description">Age: 4.6 Billion Years\nType: Yellow Dwarf (G2V)\nDiameter: 1,392,684 km\nCircumference at Equator: 4,370,005.6 km\nMass: 1,989,100,000,000,000,000,000 billion kg (333,060 x Earth)\nSurface Temperature: 5500 °C</string>

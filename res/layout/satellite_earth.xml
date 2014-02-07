@@ -3,12 +3,12 @@
     android:id="@+id/moonscrollview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="top">
+    android:layout_gravity="top" >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="UselessParent">
+        tools:ignore="UselessParent" >
 
         <TextView
             android:id="@+id/moon_title"
@@ -77,7 +77,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/moon_description_2"
             android:layout_centerHorizontal="true"
-            android:text="@string/moon_satellite" />
+            android:text="@string/button_source" />
     </RelativeLayout>
 
 </ScrollView>
