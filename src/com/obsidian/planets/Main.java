@@ -53,181 +53,178 @@ import com.andrewq.planets.R;
 import com.andrewq.planets.Settings;
 
 public class Main extends FragmentActivity {
-    private DrawerLayout mDrawerLayout;
-    private ListView mLeftDrawer;
-    private ActionBarDrawerToggle mDrawerToggle;
+	private DrawerLayout mDrawerLayout;
+	private ListView mLeftDrawer;
+	private ActionBarDrawerToggle mDrawerToggle;
 
-    private CharSequence mDrawerTitle;
-    private CharSequence mTitle;
-    private String[] mFragmentTitles;
+	private CharSequence mDrawerTitle;
+	private CharSequence mTitle;
+	private String[] mFragmentTitles;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
 
-        // --------------------------------Nav
-        // Drawer--------------------------------------------------------------
+		mTitle = mDrawerTitle = getTitle();
+		mFragmentTitles = getResources().getStringArray(R.array.fragments);
+		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
+		mLeftDrawer = (ListView) findViewById(R.id.left_drawer);
 
-        mTitle = mDrawerTitle = getTitle();
-        mFragmentTitles = getResources().getStringArray(R.array.fragments);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
-        mLeftDrawer = (ListView) findViewById(R.id.left_drawer);
+		mLeftDrawer.setAdapter(new ArrayAdapter<String>(this,
+				R.layout.drawer_list_item, mFragmentTitles));
+		mLeftDrawer.setOnItemClickListener(new DrawerItemClickListener());
 
-        mLeftDrawer.setAdapter(new ArrayAdapter<String>(this,
-                R.layout.drawer_list_item, mFragmentTitles));
-        mLeftDrawer.setOnItemClickListener(new DrawerItemClickListener());
+		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getActionBar().setHomeButtonEnabled(true);
 
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setHomeButtonEnabled(true);
+		mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
+				R.drawable.ic_drawer, R.string.drawer_open,
+				R.string.drawer_close) {
+			public void onDrawerClosed(View v) {
+				getActionBar().setTitle(mTitle);
+				supportInvalidateOptionsMenu();
+			}
 
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
-                R.drawable.ic_drawer, R.string.drawer_open,
-                R.string.drawer_close) {
-            public void onDrawerClosed(View v) {
-                getActionBar().setTitle(mTitle);
-                supportInvalidateOptionsMenu();
-            }
+			public void onDrawerOpened(View v) {
+				getActionBar().setTitle(mDrawerTitle);
+				supportInvalidateOptionsMenu();
+			}
+		};
+		mDrawerLayout.setDrawerListener(mDrawerToggle);
+		if (savedInstanceState == null) {
+			selectItem(0);
+		}
 
-            public void onDrawerOpened(View v) {
-                getActionBar().setTitle(mDrawerTitle);
-                supportInvalidateOptionsMenu();
-            }
-        };
-        mDrawerLayout.setDrawerListener(mDrawerToggle);
-        if (savedInstanceState == null) {
-            selectItem(0);
-        }
+	}
 
-    }
+	@SuppressWarnings("unused")
+	@Override
+	public boolean onPrepareOptionsMenu(Menu menu) {
+		boolean drawerOpen = mDrawerLayout.isDrawerOpen(mLeftDrawer);
 
-    @SuppressWarnings("unused")
-    @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
-        boolean drawerOpen = mDrawerLayout.isDrawerOpen(mLeftDrawer);
+		return super.onPrepareOptionsMenu(menu);
+	}
 
-        return super.onPrepareOptionsMenu(menu);
-    }
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.main_menu, menu);
+		return true;
+	}
 
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
-        return true;
-    }
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			if (mDrawerLayout.isDrawerOpen(mLeftDrawer)) {
+				mDrawerLayout.closeDrawer(mLeftDrawer);
+			} else {
+				mDrawerLayout.openDrawer(mLeftDrawer);
+			}
+			return true;
 
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                if (mDrawerLayout.isDrawerOpen(mLeftDrawer)) {
-                    mDrawerLayout.closeDrawer(mLeftDrawer);
-                } else {
-                    mDrawerLayout.openDrawer(mLeftDrawer);
-                }
-                return true;
+		case R.id.action_about:
+			aboutMenuItem();
+			break;
+		case R.id.action_settings:
+			Intent intent = new Intent(getApplicationContext(), Settings.class);
+			startActivity(intent);
+			break;
+		}
 
-            case R.id.action_about:
-                aboutMenuItem();
-                break;
-            case R.id.action_settings:
-                Intent intent = new Intent(getApplicationContext(), Settings.class);
-                startActivity(intent);
-                break;
-        }
+		return true;
+	}
 
-        return true;
-    }
+	public void aboutMenuItem() {
+		new AlertDialog.Builder(this)
+				.setTitle("A Message from the Developer")
+				.setMessage(
+						"Hello! I would like to thank you for downloading this app and "
+								+ "I think you'll find it useful. \n\n"
+								+ "This app is useful whether you are a young child, a student, a parent, or just someone who wants to learn more about the solar system you live in. "
+								+ "There are facts here about the celestial bodies in our solar system. \n\n"
+								+ "I'm a student in high school and intend to study computer science at M.I.T. With technology advancing every day, "
+								+ "a job in the tech industry is one of my goals that I think will be very successful. "
+								+ "This application has been a work in progress and has overcome a lot of technical challenges. "
+								+ "I hope that this app is useful for you and that it suits all your needs! \n\n"
+								+ "Thank you.")
+				.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
-    public void aboutMenuItem() {
-        new AlertDialog.Builder(this)
-                .setTitle("A Message from the Developer")
-                .setMessage(
-                        "Hello! I would like to thank you for downloading this app and "
-                                + "I think you'll find it useful. \n\n"
-                                + "This app is useful whether you are a young child, a student, a parent, or just someone who wants to learn more about the solar system you live in. "
-                                + "There are facts here about the celestial bodies in our solar system. \n\n"
-                                + "I'm a student in high school and intend to study computer science at M.I.T. With technology advancing every day, "
-                                + "a job in the tech industry is one of my goals that I think will be very successful. "
-                                + "This application has been a work in progress and has overcome a lot of technical challenges. "
-                                + "I hope that this app is useful for you and that it suits all your needs! \n\n"
-                                + "Thank you.")
-                .setNeutralButton("OK", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface arg0, int arg1) {
 
-                    @Override
-                    public void onClick(DialogInterface arg0, int arg1) {
+					}
+				}).show();
+	}
 
-                    }
-                }).show();
-    }
+	private class DrawerItemClickListener implements
+			ListView.OnItemClickListener {
+		@Override
+		public void onItemClick(AdapterView<?> parent, View v, int position,
+				long id) {
+			selectItem(position);
+		}
+	}
 
-    private class DrawerItemClickListener implements
-            ListView.OnItemClickListener {
-        @Override
-        public void onItemClick(AdapterView<?> parent, View v, int position,
-                                long id) {
-            selectItem(position);
-        }
-    }
+	private void selectItem(int position) {
+		Fragment newFragment = new FragmentA();
+		FragmentManager fm = getSupportFragmentManager();
+		switch (position) {
+		case 0:
+			newFragment = new FragmentA();
+			break;
+		case 1:
+			newFragment = new FragmentB();
 
-    private void selectItem(int position) {
-        Fragment newFragment = new FragmentA();
-        FragmentManager fm = getSupportFragmentManager();
-        switch (position) {
-            case 0:
-                newFragment = new FragmentA();
-                break;
-            case 1:
-                newFragment = new FragmentB();
+			break;
+		case 2:
+			newFragment = new FragmentC();
+			break;
+		case 3:
+			newFragment = new FragmentD();
+			break;
+		case 4:
+			newFragment = new FragmentE();
+			break;
+		case 5:
+			newFragment = new FragmentF();
+			break;
+		case 6:
+			newFragment = new FragmentG();
+			break;
 
-                break;
-            case 2:
-                newFragment = new FragmentC();
-                break;
-            case 3:
-                newFragment = new FragmentD();
-                break;
-            case 4:
-                newFragment = new FragmentE();
-                break;
-            case 5:
-                newFragment = new FragmentF();
-                break;
-            case 6:
-                newFragment = new FragmentG();
-                break;
+		case 7:
+			newFragment = new FragmentH();
+			break;
+		case 8:
+			newFragment = new FragmentI();
 
-            case 7:
-                newFragment = new FragmentH();
-                break;
-            case 8:
-                newFragment = new FragmentI();
+			break;
 
-                break;
+		}
 
-        }
+		fm.beginTransaction().replace(R.id.content_frame, newFragment).commit();
 
-        fm.beginTransaction().replace(R.id.content_frame, newFragment).commit();
+		mLeftDrawer.setItemChecked(position, true);
+		setTitle(mFragmentTitles[position]);
+		mDrawerLayout.closeDrawer(mLeftDrawer);
+	}
 
-        mLeftDrawer.setItemChecked(position, true);
-        setTitle(mFragmentTitles[position]);
-        mDrawerLayout.closeDrawer(mLeftDrawer);
-    }
+	@Override
+	public void setTitle(CharSequence title) {
+		mTitle = title;
+		getActionBar().setTitle(title);
+	}
 
-    @Override
-    public void setTitle(CharSequence title) {
-        mTitle = title;
-        getActionBar().setTitle(title);
-    }
+	@Override
+	protected void onPostCreate(Bundle savedInstanceState) {
+		super.onPostCreate(savedInstanceState);
+		mDrawerToggle.syncState();
+	}
 
-    @Override
-    protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
-        mDrawerToggle.syncState();
-    }
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		super.onConfigurationChanged(newConfig);
+		mDrawerToggle.onConfigurationChanged(newConfig);
 
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        mDrawerToggle.onConfigurationChanged(newConfig);
-
-    }
+	}
 
 }
