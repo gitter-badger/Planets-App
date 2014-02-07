@@ -23,7 +23,7 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int action_about=0x7f020000;
+        public static final int action_search=0x7f020000;
         public static final int earth=0x7f020001;
         public static final int ic_drawer=0x7f020002;
         public static final int ic_launcher=0x7f020003;
@@ -38,7 +38,7 @@ public final class R {
         public static final int venus=0x7f02000c;
     }
     public static final class id {
-        public static final int action_about=0x7f090059;
+        public static final int action_search=0x7f090059;
         public static final int action_settings=0x7f09005a;
         public static final int button_1=0x7f090009;
         public static final int button_2=0x7f090011;
@@ -153,16 +153,16 @@ public final class R {
     public static final class string {
         /**  Action Bar Titles 
          */
-        public static final int action_about=0x7f050001;
-        public static final int action_settings=0x7f050002;
+        public static final int action_search=0x7f050001;
+        public static final int action_settings=0x7f050003;
         /**  Main Titles 
          */
         public static final int app_name=0x7f050000;
         /**  Sources 
          */
         public static final int button_source=0x7f05001c;
-        public static final int drawer_close=0x7f050004;
-        public static final int drawer_open=0x7f050003;
+        public static final int drawer_close=0x7f050005;
+        public static final int drawer_open=0x7f050004;
         public static final int earth_description=0x7f050030;
         public static final int earth_description_2=0x7f050032;
         public static final int earth_image=0x7f05000e;
@@ -213,14 +213,14 @@ public final class R {
         public static final int pref_4=0x7f05000a;
         /**  Preferences Titles 
          */
-        public static final int pref_cate_title_1=0x7f050005;
-        public static final int pref_cate_title_2=0x7f050006;
+        public static final int pref_cate_title_1=0x7f050006;
         public static final int saturn_description=0x7f05003f;
         public static final int saturn_description_2=0x7f050041;
         public static final int saturn_image=0x7f050011;
         public static final int saturn_sub_title_1=0x7f05003e;
         public static final int saturn_sub_title_2=0x7f050040;
         public static final int saturn_title=0x7f05003d;
+        public static final int search_hint=0x7f050002;
         public static final int sun_description=0x7f050021;
         public static final int sun_description_2=0x7f050023;
         /**  Accessibility Titles 

@@ -43,7 +43,7 @@ public class MainActivity extends FragmentActivity {
 		super.onOptionsItemSelected(item);
 
 		switch (item.getItemId()) {
-		case R.id.action_about:
+		case R.id.action_search:
 			aboutMenuItem();
 			break;
 		case R.id.action_settings:

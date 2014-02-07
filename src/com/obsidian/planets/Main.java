@@ -36,6 +36,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -66,6 +67,8 @@ public class Main extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
 		mTitle = mDrawerTitle = getTitle();
 		mFragmentTitles = getResources().getStringArray(R.array.fragments);
@@ -101,6 +104,24 @@ public class Main extends FragmentActivity {
 
 	}
 
+	@Override
+	protected void onResume() {
+		super.onResume();
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+	}
+
+	@Override
+	protected void onStop() {
+		super.onStop();
+		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+	}
+
 	@SuppressWarnings("unused")
 	@Override
 	public boolean onPrepareOptionsMenu(Menu menu) {
@@ -126,8 +147,8 @@ public class Main extends FragmentActivity {
 			}
 			return true;
 
-		case R.id.action_about:
-			aboutMenuItem();
+		case R.id.action_search:
+			searchMenuItem();
 			break;
 		case R.id.action_settings:
 			Intent intent = new Intent(getApplicationContext(), Settings.class);
@@ -138,19 +159,12 @@ public class Main extends FragmentActivity {
 		return true;
 	}
 
-	public void aboutMenuItem() {
+	public void searchMenuItem() {
 		new AlertDialog.Builder(this)
-				.setTitle("A Message from the Developer")
+				.setTitle("Search (Coming Soon)")
 				.setMessage(
-						"Hello! I would like to thank you for downloading this app and "
-								+ "I think you'll find it useful. \n\n"
-								+ "This app is useful whether you are a young child, a student, a parent, or just someone who wants to learn more about the solar system you live in. "
-								+ "There are facts here about the celestial bodies in our solar system. \n\n"
-								+ "I'm a student in high school and intend to study computer science at M.I.T. With technology advancing every day, "
-								+ "a job in the tech industry is one of my goals that I think will be very successful. "
-								+ "This application has been a work in progress and has overcome a lot of technical challenges. "
-								+ "I hope that this app is useful for you and that it suits all your needs! \n\n"
-								+ "Thank you.")
+						"This application will soon have the ability to search different planets from all "
+								+ "solar systems.")
 				.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
 					@Override
