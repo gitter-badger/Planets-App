@@ -389,7 +389,7 @@ containing a value of this type.
         public static final int auth_client_using_bad_version_title=0x7f060014;
         /**  Sources 
          */
-        public static final int button_source=0x7f060036;
+        public static final int button_source=0x7f060037;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
@@ -463,84 +463,85 @@ containing a value of this type.
         public static final int common_signin_button_text_long=0x7f060013;
         public static final int drawer_close=0x7f06001f;
         public static final int drawer_open=0x7f06001e;
-        public static final int earth_description=0x7f06004a;
-        public static final int earth_description_2=0x7f06004c;
-        public static final int earth_image=0x7f060028;
+        public static final int earth_description=0x7f06004b;
+        public static final int earth_description_2=0x7f06004d;
+        public static final int earth_image=0x7f060029;
         /**  Moons 
          */
-        public static final int earth_satellite=0x7f06002e;
-        public static final int earth_sub_title_1=0x7f060049;
-        public static final int earth_sub_title_2=0x7f06004b;
-        public static final int earth_title=0x7f060048;
-        public static final int home_info_1=0x7f060038;
+        public static final int earth_satellite=0x7f06002f;
+        public static final int earth_sub_title_1=0x7f06004a;
+        public static final int earth_sub_title_2=0x7f06004c;
+        public static final int earth_title=0x7f060049;
+        public static final int home_info_1=0x7f060039;
         /**  Objects Names 
          */
-        public static final int home_title=0x7f060037;
-        public static final int jupiter_description=0x7f060054;
-        public static final int jupiter_description_2=0x7f060056;
-        public static final int jupiter_image=0x7f06002a;
-        public static final int jupiter_sub_title_1=0x7f060053;
-        public static final int jupiter_sub_title_2=0x7f060055;
-        public static final int jupiter_title=0x7f060052;
-        public static final int mars_description=0x7f06004f;
-        public static final int mars_description_2=0x7f060051;
-        public static final int mars_image=0x7f060029;
-        public static final int mars_sub_title_1=0x7f06004e;
-        public static final int mars_sub_title_2=0x7f060050;
-        public static final int mars_title=0x7f06004d;
-        public static final int mercury_description=0x7f060040;
-        public static final int mercury_description_2=0x7f060042;
-        public static final int mercury_image=0x7f060026;
-        public static final int mercury_sub_title_1=0x7f06003f;
-        public static final int mercury_sub_title_2=0x7f060041;
-        public static final int mercury_title=0x7f06003e;
-        public static final int moon_button=0x7f060035;
-        public static final int moon_description=0x7f060032;
-        public static final int moon_description_2=0x7f060034;
-        public static final int moon_image=0x7f060030;
-        public static final int moon_sub_title_1=0x7f060031;
-        public static final int moon_sub_title_2=0x7f060033;
-        public static final int moon_title=0x7f06002f;
-        public static final int neptune_description=0x7f060063;
-        public static final int neptune_description_2=0x7f060065;
-        public static final int neptune_image=0x7f06002d;
-        public static final int neptune_sub_title_1=0x7f060062;
-        public static final int neptune_sub_title_2=0x7f060064;
-        public static final int neptune_title=0x7f060061;
+        public static final int home_title=0x7f060038;
+        public static final int jupiter_description=0x7f060055;
+        public static final int jupiter_description_2=0x7f060057;
+        public static final int jupiter_image=0x7f06002b;
+        public static final int jupiter_sub_title_1=0x7f060054;
+        public static final int jupiter_sub_title_2=0x7f060056;
+        public static final int jupiter_title=0x7f060053;
+        public static final int mars_description=0x7f060050;
+        public static final int mars_description_2=0x7f060052;
+        public static final int mars_image=0x7f06002a;
+        public static final int mars_sub_title_1=0x7f06004f;
+        public static final int mars_sub_title_2=0x7f060051;
+        public static final int mars_title=0x7f06004e;
+        public static final int mercury_description=0x7f060041;
+        public static final int mercury_description_2=0x7f060043;
+        public static final int mercury_image=0x7f060027;
+        public static final int mercury_sub_title_1=0x7f060040;
+        public static final int mercury_sub_title_2=0x7f060042;
+        public static final int mercury_title=0x7f06003f;
+        public static final int moon_button=0x7f060036;
+        public static final int moon_description=0x7f060033;
+        public static final int moon_description_2=0x7f060035;
+        public static final int moon_image=0x7f060031;
+        public static final int moon_sub_title_1=0x7f060032;
+        public static final int moon_sub_title_2=0x7f060034;
+        public static final int moon_title=0x7f060030;
+        public static final int neptune_description=0x7f060064;
+        public static final int neptune_description_2=0x7f060066;
+        public static final int neptune_image=0x7f06002e;
+        public static final int neptune_sub_title_1=0x7f060063;
+        public static final int neptune_sub_title_2=0x7f060065;
+        public static final int neptune_title=0x7f060062;
         public static final int pref_1=0x7f060021;
         public static final int pref_2=0x7f060022;
-        public static final int pref_3=0x7f060023;
-        public static final int pref_4=0x7f060024;
+        public static final int pref_3=0x7f060024;
+        public static final int pref_4=0x7f060025;
         /**  Preferences Titles 
          */
         public static final int pref_cate_title_1=0x7f060020;
-        public static final int saturn_description=0x7f060059;
-        public static final int saturn_description_2=0x7f06005b;
-        public static final int saturn_image=0x7f06002b;
-        public static final int saturn_sub_title_1=0x7f060058;
-        public static final int saturn_sub_title_2=0x7f06005a;
-        public static final int saturn_title=0x7f060057;
+        public static final int pref_cate_title_2=0x7f060023;
+        public static final int saturn_description=0x7f06005a;
+        public static final int saturn_description_2=0x7f06005c;
+        public static final int saturn_image=0x7f06002c;
+        public static final int saturn_sub_title_1=0x7f060059;
+        public static final int saturn_sub_title_2=0x7f06005b;
+        public static final int saturn_title=0x7f060058;
         public static final int search_hint=0x7f06001c;
-        public static final int sun_description=0x7f06003b;
-        public static final int sun_description_2=0x7f06003d;
+        public static final int sun_description=0x7f06003c;
+        public static final int sun_description_2=0x7f06003e;
         /**  Accessibility Titles 
          */
-        public static final int sun_image=0x7f060025;
-        public static final int sun_sub_title_1=0x7f06003a;
-        public static final int sun_sub_title_2=0x7f06003c;
-        public static final int sun_title=0x7f060039;
-        public static final int uranus_description=0x7f06005e;
-        public static final int uranus_description_2=0x7f060060;
-        public static final int uranus_image=0x7f06002c;
-        public static final int uranus_sub_title_1=0x7f06005d;
-        public static final int uranus_sub_title_2=0x7f06005f;
-        public static final int uranus_title=0x7f06005c;
-        public static final int venus_description=0x7f060045;
-        public static final int venus_description_2=0x7f060047;
-        public static final int venus_image=0x7f060027;
-        public static final int venus_sub_title_1=0x7f060044;
-        public static final int venus_sub_title_2=0x7f060046;
-        public static final int venus_title=0x7f060043;
+        public static final int sun_image=0x7f060026;
+        public static final int sun_sub_title_1=0x7f06003b;
+        public static final int sun_sub_title_2=0x7f06003d;
+        public static final int sun_title=0x7f06003a;
+        public static final int uranus_description=0x7f06005f;
+        public static final int uranus_description_2=0x7f060061;
+        public static final int uranus_image=0x7f06002d;
+        public static final int uranus_sub_title_1=0x7f06005e;
+        public static final int uranus_sub_title_2=0x7f060060;
+        public static final int uranus_title=0x7f06005d;
+        public static final int venus_description=0x7f060046;
+        public static final int venus_description_2=0x7f060048;
+        public static final int venus_image=0x7f060028;
+        public static final int venus_sub_title_1=0x7f060045;
+        public static final int venus_sub_title_2=0x7f060047;
+        public static final int venus_title=0x7f060044;
     }
     public static final class style {
         /**  Base application theme. 
