@@ -1,5 +1,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:id="@+id/scrollViewMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,21 +18,31 @@
             android:paddingRight="5dp"
             tools:ignore="UselessParent" >
 
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-6238229903420377/2608932046" />
+
             <TextView
                 android:id="@+id/home_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/adView"
                 android:layout_centerHorizontal="true"
                 android:text="@string/home_title"
                 android:textSize="30sp"
                 android:textStyle="bold|italic" />
-            
+
             <TextView
                 android:id="@+id/home_info_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:layout_below="@id/home_title"
+                android:layout_centerHorizontal="true"
                 android:text="@string/home_info_1"
                 android:textSize="16sp" />
         </RelativeLayout>
