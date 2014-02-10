@@ -3,9 +3,7 @@ package com.andrewq.planets;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -25,6 +23,8 @@ public class MainActivity extends FragmentActivity {
 		setContentView(R.layout.activity_main);
 		viewPager = (ViewPager) findViewById(R.id.pager);
 		viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
 	}
 
 	@Override
@@ -53,21 +53,6 @@ public class MainActivity extends FragmentActivity {
 		}
 
 		return super.onOptionsItemSelected(item);
-	}
-
-	@Override
-	public void onWindowFocusChanged(boolean hasFocus) {
-		SharedPreferences getPrefs = PreferenceManager
-				.getDefaultSharedPreferences(getBaseContext());
-		boolean box = getPrefs.getBoolean("pref_wakelock", true);
-		if (box == true) {
-			getWindow()
-					.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-		} else {
-			getWindow().clearFlags(
-					WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-		}
-		super.onWindowFocusChanged(hasFocus);
 	}
 
 	public void aboutMenuItem() {
