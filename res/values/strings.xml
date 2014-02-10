@@ -29,8 +29,9 @@
     <string name="pref_cate_title_1">General</string>
     <string name="pref_1">Rate on the Play Store</string>
     <string name="pref_2">Other Apps</string>
+    <string name="pref_cate_title_2">Paid</string>
     <string name="pref_3">Donate</string>
-    <string name="pref_4">Keep Screen Awake</string>
+    <string name="pref_4">Remove Ads</string>
 
     <!-- Accessibility Titles -->
     <string name="sun_image">Picture of Sun</string>
@@ -58,7 +59,7 @@
 
     <!-- Objects Names -->
     <string name="home_title">Home</string>
-    <string name="home_info_1">Welcome to Planets! The app that gives you planet details with the tap of your finger. </string>
+    <string name="home_info_1">Welcome to Planets!</string>
     <string name="sun_title">Sun (Sol)</string>
     <string name="sun_sub_title_1">Specific Information:</string>
     <string name="sun_description">Age: 4.6 Billion Years\nType: Yellow Dwarf (G2V)\nDiameter: 1,392,684 km\nCircumference at Equator: 4,370,005.6 km\nMass: 1,989,100,000,000,000,000,000 billion kg (333,060 x Earth)\nSurface Temperature: 5500 °C</string>
