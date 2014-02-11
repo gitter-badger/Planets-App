@@ -235,9 +235,8 @@ containing a value of this type.
         public static final int venus=0x7f020028;
     }
     public static final class id {
-        public static final int action_search=0x7f05005f;
-        public static final int action_settings=0x7f050060;
-        public static final int adView=0x7f050051;
+        public static final int action_search=0x7f05005e;
+        public static final int action_settings=0x7f05005f;
         public static final int button_1=0x7f05000e;
         public static final int button_2=0x7f050016;
         public static final int button_3=0x7f05001e;
@@ -247,8 +246,8 @@ containing a value of this type.
         public static final int button_7=0x7f05003f;
         public static final int button_8=0x7f050047;
         public static final int button_9=0x7f05004f;
-        public static final int content_frame=0x7f050055;
-        public static final int drawer=0x7f050054;
+        public static final int content_frame=0x7f050054;
+        public static final int drawer=0x7f050053;
         public static final int earth=0x7f050021;
         public static final int earth_description=0x7f050023;
         public static final int earth_description_2=0x7f050025;
@@ -256,8 +255,8 @@ containing a value of this type.
         public static final int earth_sub_title_1=0x7f050022;
         public static final int earth_sub_title_2=0x7f050024;
         public static final int earth_title=0x7f050020;
-        public static final int home_info_1=0x7f050053;
-        public static final int home_title=0x7f050052;
+        public static final int home_info_1=0x7f050052;
+        public static final int home_title=0x7f050051;
         public static final int hybrid=0x7f050004;
         public static final int jupiter=0x7f050032;
         public static final int jupiter_description=0x7f050034;
@@ -265,7 +264,7 @@ containing a value of this type.
         public static final int jupiter_sub_title_1=0x7f050033;
         public static final int jupiter_sub_title_2=0x7f050035;
         public static final int jupiter_title=0x7f050031;
-        public static final int left_drawer=0x7f050056;
+        public static final int left_drawer=0x7f050055;
         public static final int mars=0x7f05002a;
         public static final int mars_description=0x7f05002c;
         public static final int mars_description_2=0x7f05002e;
@@ -278,14 +277,14 @@ containing a value of this type.
         public static final int mercury_sub_title_1=0x7f050012;
         public static final int mercury_sub_title_2=0x7f050014;
         public static final int mercury_title=0x7f050010;
-        public static final int moon=0x7f050059;
-        public static final int moon_button=0x7f05005e;
-        public static final int moon_description=0x7f05005b;
-        public static final int moon_description_2=0x7f05005d;
-        public static final int moon_sub_title_1=0x7f05005a;
-        public static final int moon_sub_title_2=0x7f05005c;
-        public static final int moon_title=0x7f050058;
-        public static final int moonscrollview=0x7f050057;
+        public static final int moon=0x7f050058;
+        public static final int moon_button=0x7f05005d;
+        public static final int moon_description=0x7f05005a;
+        public static final int moon_description_2=0x7f05005c;
+        public static final int moon_sub_title_1=0x7f050059;
+        public static final int moon_sub_title_2=0x7f05005b;
+        public static final int moon_title=0x7f050057;
+        public static final int moonscrollview=0x7f050056;
         public static final int neptune=0x7f05004a;
         public static final int neptune_description=0x7f05004c;
         public static final int neptune_description_2=0x7f05004e;

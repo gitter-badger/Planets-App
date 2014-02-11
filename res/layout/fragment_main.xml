@@ -18,20 +18,10 @@
             android:paddingRight="5dp"
             tools:ignore="UselessParent" >
 
-            <com.google.android.gms.ads.AdView
-                android:id="@+id/adView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:paddingTop="2dp"
-                ads:adSize="BANNER"
-                ads:adUnitId="ca-app-pub-6238229903420377/2608932046" />
-
             <TextView
                 android:id="@+id/home_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/adView"
                 android:layout_centerHorizontal="true"
                 android:text="@string/home_title"
                 android:textSize="30sp"
