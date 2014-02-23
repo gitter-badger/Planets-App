@@ -34,15 +34,6 @@
                 android:action="android.intent.action.VIEW"
                 android:data="https://play.google.com/store/apps/details?id=com.andrewq.donate" />
         </Preference>
-        
-        <Preference
-            android:summary="Tap here to buy the ad free version. (Uninstall this app.)"
-            android:title="@string/pref_4" >
-
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://play.google.com/store/apps/details?id=com.andrewq.planets" />
-        </Preference>
     </PreferenceCategory>
 
 </PreferenceScreen>

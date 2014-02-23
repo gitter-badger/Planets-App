@@ -11,6 +11,7 @@
     <string-array name="fragments">
         <item>Home</item>
         <item>Our Solar System</item>
+        <item>Other Solar Systems</item>
     </string-array>
 
     <string name="drawer_open">Open navigation drawer</string>
@@ -225,5 +226,7 @@ The first set of rings was discovered in 1977 and the second set was discovered 
 Although smaller in diameter than Uranus, Neptune has a greater mass.</string>
     <string name="home_welcome">Welcome!</string>
     <string name="home_message">Hello and welcome to my app! This is a test paragraph for spacing tests.</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="coming_soon_2">This will soon be full of information about other Solar Systems that we know of.</string>
 
 </resources>

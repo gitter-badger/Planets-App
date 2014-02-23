@@ -45,6 +45,7 @@ import com.andrewq.planets.FragmentHome;
 import com.andrewq.planets.FragmentPlanets;
 import com.andrewq.planets.R;
 import com.andrewq.planets.Settings;
+import com.andrewq.planets.SolarSystem2;
 
 public class Main extends FragmentActivity {
 	private DrawerLayout mDrawerLayout;
@@ -184,6 +185,9 @@ public class Main extends FragmentActivity {
 			break;
 		case 1:
 			newFragment = new FragmentPlanets();
+			break;
+		case 2:
+			newFragment = new SolarSystem2();
 			break;
 		}
 

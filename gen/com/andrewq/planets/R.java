@@ -235,8 +235,8 @@ containing a value of this type.
         public static final int venus=0x7f020028;
     }
     public static final class id {
-        public static final int action_search=0x7f05005d;
-        public static final int action_settings=0x7f05005e;
+        public static final int action_search=0x7f05005e;
+        public static final int action_settings=0x7f05005f;
         public static final int button_1=0x7f05000c;
         public static final int button_2=0x7f050014;
         public static final int button_3=0x7f05001c;
@@ -316,6 +316,7 @@ containing a value of this type.
         public static final int sun_sub_title_2=0x7f05000a;
         public static final int sun_title=0x7f050006;
         public static final int terrain=0x7f050003;
+        public static final int tvComingSoon=0x7f05005d;
         public static final int tvWelcomeParagraph=0x7f050047;
         public static final int tvWelcomeTitle=0x7f050046;
         public static final int uranus=0x7f050040;
@@ -350,6 +351,7 @@ containing a value of this type.
         public static final int main=0x7f03000c;
         public static final int satellite_earth=0x7f03000d;
         public static final int settings=0x7f03000e;
+        public static final int solar_system_2=0x7f03000f;
     }
     public static final class menu {
         public static final int main_menu=0x7f0b0000;
@@ -388,6 +390,8 @@ containing a value of this type.
         /**  Sources 
          */
         public static final int button_source=0x7f060036;
+        public static final int coming_soon=0x7f060068;
+        public static final int coming_soon_2=0x7f060069;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
