@@ -26,8 +26,11 @@ package com.obsidian.planets;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -96,12 +99,33 @@ public class Main extends FragmentActivity {
 			selectItem(0);
 		}
 
-		mDrawerLayout.postDelayed(new Runnable() {
+		Thread t = new Thread(new Runnable() {
+
 			@Override
 			public void run() {
-				mDrawerLayout.openDrawer(Gravity.LEFT);
+				SharedPreferences getPrefs = PreferenceManager
+						.getDefaultSharedPreferences(getBaseContext());
+				boolean isFirstStart = getPrefs.getBoolean("key", true);
+
+				if (isFirstStart) {
+					mDrawerLayout.openDrawer(Gravity.LEFT);
+					Editor e = getPrefs.edit();
+					e.putBoolean("key", false);
+					e.commit();
+				}
+
 			}
-		}, 100);
+
+		});
+
+		t.start();
+
+		/*
+		 * mDrawerLayout.postDelayed(new Runnable() {
+		 * 
+		 * @Override public void run() { mDrawerLayout.openDrawer(Gravity.LEFT);
+		 * } }, 100);
+		 */
 
 	}
 
