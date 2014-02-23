@@ -33,6 +33,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -95,6 +96,13 @@ public class Main extends FragmentActivity {
 			selectItem(0);
 		}
 
+		mDrawerLayout.postDelayed(new Runnable() {
+			@Override
+			public void run() {
+				mDrawerLayout.openDrawer(Gravity.LEFT);
+			}
+		}, 100);
+
 	}
 
 	@Override
@@ -143,10 +151,6 @@ public class Main extends FragmentActivity {
 		case R.id.action_search:
 			searchMenuItem();
 			break;
-		case R.id.action_settings:
-			Intent intent = new Intent(getApplicationContext(), Settings.class);
-			startActivity(intent);
-			break;
 		}
 
 		return true;
@@ -188,6 +192,10 @@ public class Main extends FragmentActivity {
 			break;
 		case 2:
 			newFragment = new SolarSystem2();
+			break;
+		case 3:
+			Intent intent = new Intent(getApplicationContext(), Settings.class);
+			startActivity(intent);
 			break;
 		}
 
