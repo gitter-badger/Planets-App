@@ -6,14 +6,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class FragmentMain extends Fragment {
-
+public class FragmentHome extends Fragment {
+	
 	@Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
 	}
 
-	public FragmentMain() {
+	public FragmentHome() {
 		// Required empty public constructor
 	}
 
@@ -21,6 +21,7 @@ public class FragmentMain extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
-		return inflater.inflate(R.layout.fragment_main, container, false);
+		return inflater.inflate(R.layout.fragment_home, container, false);
 	}
+
 }

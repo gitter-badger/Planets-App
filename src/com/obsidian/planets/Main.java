@@ -41,16 +41,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.andrewq.planets.FragmentA;
-import com.andrewq.planets.FragmentB;
-import com.andrewq.planets.FragmentC;
-import com.andrewq.planets.FragmentD;
-import com.andrewq.planets.FragmentE;
-import com.andrewq.planets.FragmentF;
-import com.andrewq.planets.FragmentG;
-import com.andrewq.planets.FragmentH;
-import com.andrewq.planets.FragmentI;
-import com.andrewq.planets.FragmentMain;
+import com.andrewq.planets.FragmentHome;
+import com.andrewq.planets.FragmentPlanets;
 import com.andrewq.planets.R;
 import com.andrewq.planets.Settings;
 
@@ -184,38 +176,14 @@ public class Main extends FragmentActivity {
 	}
 
 	private void selectItem(int position) {
-		Fragment newFragment = new FragmentA();
+		Fragment newFragment = new FragmentHome();
 		FragmentManager fm = getSupportFragmentManager();
 		switch (position) {
 		case 0:
-			newFragment = new FragmentMain();
+			newFragment = new FragmentHome();
 			break;
 		case 1:
-			newFragment = new FragmentA();
-			break;
-		case 2:
-			newFragment = new FragmentB();
-			break;
-		case 3:
-			newFragment = new FragmentC();
-			break;
-		case 4:
-			newFragment = new FragmentD();
-			break;
-		case 5:
-			newFragment = new FragmentE();
-			break;
-		case 6:
-			newFragment = new FragmentF();
-			break;
-		case 7:
-			newFragment = new FragmentG();
-			break;
-		case 8:
-			newFragment = new FragmentH();
-			break;
-		case 9:
-			newFragment = new FragmentI();
+			newFragment = new FragmentPlanets();
 			break;
 		}
 
