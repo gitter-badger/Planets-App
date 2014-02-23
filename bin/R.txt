@@ -72,7 +72,6 @@ int drawable sun 0x7f020026
 int drawable uranus 0x7f020027
 int drawable venus 0x7f020028
 int id action_search 0x7f05005e
-int id action_settings 0x7f05005f
 int id button_1 0x7f05000c
 int id button_2 0x7f050014
 int id button_3 0x7f05001c

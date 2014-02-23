@@ -12,6 +12,7 @@
         <item>Home</item>
         <item>Our Solar System</item>
         <item>Other Solar Systems</item>
+        <item>Settings</item>
     </string-array>
 
     <string name="drawer_open">Open navigation drawer</string>
@@ -224,8 +225,8 @@ The first set of rings was discovered in 1977 and the second set was discovered 
     <string name="neptune_description_2" formatted="false">Neptune is the eighth planet from the Sun and the smallest of the gas giants. Neptune was the first planet found by mathematical prediction after unexpected changes in the orbit of Uranus were observed. Neptune is named after the Roman god of the sea.
         Neptune has only been passed by one spacecraft, Voyager 2 which flew by on the 25th of August 1989.
 Although smaller in diameter than Uranus, Neptune has a greater mass.</string>
-    <string name="home_welcome">Welcome!</string>
-    <string name="home_message">Hello and welcome to my app! This is a test paragraph for spacing tests.</string>
+    <string name="home_welcome">Welcome! </string>
+    <string name="home_message">This application is for learning about the universe around you. It is intended for all ages to learn about the planets in our solar system and soon, other solar systems that we know of. If you find this useful, please leave a rating. Thanks!</string>
     <string name="coming_soon">Coming Soon</string>
     <string name="coming_soon_2">This will soon be full of information about other Solar Systems that we know of.</string>
 

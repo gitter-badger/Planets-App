@@ -236,7 +236,6 @@ containing a value of this type.
     }
     public static final class id {
         public static final int action_search=0x7f05005e;
-        public static final int action_settings=0x7f05005f;
         public static final int button_1=0x7f05000c;
         public static final int button_2=0x7f050014;
         public static final int button_3=0x7f05001c;
