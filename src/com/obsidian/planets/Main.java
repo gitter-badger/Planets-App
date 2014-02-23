@@ -115,17 +115,9 @@ public class Main extends FragmentActivity {
 				}
 
 			}
-
 		});
 
 		t.start();
-
-		/*
-		 * mDrawerLayout.postDelayed(new Runnable() {
-		 * 
-		 * @Override public void run() { mDrawerLayout.openDrawer(Gravity.LEFT);
-		 * } }, 100);
-		 */
 
 	}
 
