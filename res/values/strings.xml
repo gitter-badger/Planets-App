@@ -15,9 +15,7 @@
         <item>Settings</item>
     </string-array>
 
-    <string name="drawer_open">Open navigation drawer</string>
-    <string name="drawer_close">Close navigation drawer</string>
-
+    
     <!-- Preferences Titles -->
     <string name="pref_cate_title_1">General</string>
     <string name="pref_1">Rate on the Play Store</string>
@@ -229,5 +227,10 @@ Although smaller in diameter than Uranus, Neptune has a greater mass.</string>
     <string name="home_message">This application is for learning about the universe around you. It is intended for all ages to learn about the planets in our solar system and soon, other solar systems that we know of. If you find this useful, please leave a rating. Thanks!</string>
     <string name="coming_soon">Coming Soon</string>
     <string name="coming_soon_2">This will soon be full of information about other Solar Systems that we know of.</string>
+    
+    <!-- Other -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="image_caption">(Tap the image to see enlarged view)</string>
 
 </resources>

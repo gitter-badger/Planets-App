@@ -32,12 +32,25 @@
                 android:layout_centerHorizontal="true"
                 android:contentDescription="@string/sun_image"
                 android:src="@drawable/sun" />
+            
+            <TextView
+                android:id="@+id/image_caption_sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sun"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/image_caption"
+                android:textSize="12sp"
+                android:textStyle="bold|italic" />
 
             <TextView
                 android:id="@+id/sun_sub_title_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/sun"
+                android:layout_below="@+id/image_caption_sun"
                 android:layout_centerHorizontal="false"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
