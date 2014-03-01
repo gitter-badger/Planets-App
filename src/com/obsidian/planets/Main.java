@@ -122,6 +122,21 @@ public class Main extends FragmentActivity {
 	}
 
 	@Override
+	public void onWindowFocusChanged(boolean hasFocus) {
+		SharedPreferences getPrefs = PreferenceManager
+				.getDefaultSharedPreferences(getBaseContext());
+		String theme_chooser = getPrefs.getString("prefSetTheme", "1");
+
+		if (theme_chooser.equals("1")) {
+			setTheme(android.R.style.Theme_Holo_Light);
+		} else {
+			setTheme(android.R.style.Theme_Holo_Light_DarkActionBar);
+		}
+
+		super.onWindowFocusChanged(hasFocus);
+	}
+
+	@Override
 	protected void onResume() {
 		super.onResume();
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);

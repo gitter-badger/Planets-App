@@ -5,6 +5,14 @@
 
     <PreferenceCategory android:title="@string/pref_cate_title_1" >
 
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/themes"
+            android:entryValues="@array/themesEntries"
+            android:key="prefSetTheme"
+            android:summary="Change the theme of the app."
+            android:title="@string/pref_5" />
+        
         <Preference
             android:summary="Tap here to rate this application on the play store. All feedback is appreciated."
             android:title="@string/pref_1" >

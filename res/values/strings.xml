@@ -14,6 +14,16 @@
         <item>Other Solar Systems</item>
         <item>Settings</item>
     </string-array>
+    
+    <string-array name="themes">
+        <item name="1">Light</item>
+        <item name="2">Dark</item>
+    </string-array>
+    
+    <string-array name="themesEntries">
+        <item name="1">1</item>
+        <item name="2">2</item>
+    </string-array>
 
     
     <!-- Preferences Titles -->
@@ -23,6 +33,7 @@
     <string name="pref_cate_title_2">Paid</string>
     <string name="pref_3">Donate</string>
     <string name="pref_4">Remove Ads</string>
+    <string name="pref_5">Choose Theme</string>
 
     <!-- Accessibility Titles -->
     <string name="sun_image">Picture of Sun</string>
