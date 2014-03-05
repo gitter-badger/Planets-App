@@ -126,6 +126,7 @@ public class Main extends FragmentActivity {
 		SharedPreferences getPrefs = PreferenceManager
 				.getDefaultSharedPreferences(getBaseContext());
 		String theme_chooser = getPrefs.getString("prefSetTheme", "1");
+		View view = findViewById(R.layout.fragment_home);
 
 		if (theme_chooser.equals("1")) {
 			setTheme(android.R.style.Theme_Holo_Light);
