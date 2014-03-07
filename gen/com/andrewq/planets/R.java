@@ -41,7 +41,7 @@ public final class R {
         public static final int venus=0x7f02000d;
     }
     public static final class id {
-        public static final int action_search=0x7f09005a;
+        public static final int action_search=0x7f09005c;
         public static final int button_1=0x7f090008;
         public static final int button_2=0x7f090010;
         public static final int button_3=0x7f090018;
@@ -50,9 +50,9 @@ public final class R {
         public static final int button_6=0x7f090031;
         public static final int button_7=0x7f090039;
         public static final int button_8=0x7f090041;
-        public static final int button_9=0x7f09004b;
-        public static final int content_frame=0x7f09004f;
-        public static final int drawer=0x7f09004e;
+        public static final int button_9=0x7f09004d;
+        public static final int content_frame=0x7f090051;
+        public static final int drawer=0x7f090050;
         public static final int earth=0x7f09001b;
         public static final int earth_description=0x7f09001d;
         public static final int earth_description_2=0x7f09001f;
@@ -67,7 +67,7 @@ public final class R {
         public static final int jupiter_sub_title_1=0x7f09002d;
         public static final int jupiter_sub_title_2=0x7f09002f;
         public static final int jupiter_title=0x7f09002b;
-        public static final int left_drawer=0x7f090050;
+        public static final int left_drawer=0x7f090052;
         public static final int mars=0x7f090024;
         public static final int mars_description=0x7f090026;
         public static final int mars_description_2=0x7f090028;
@@ -80,22 +80,22 @@ public final class R {
         public static final int mercury_sub_title_1=0x7f09000c;
         public static final int mercury_sub_title_2=0x7f09000e;
         public static final int mercury_title=0x7f09000a;
-        public static final int moon=0x7f090053;
-        public static final int moon_button=0x7f090058;
-        public static final int moon_description=0x7f090055;
-        public static final int moon_description_2=0x7f090057;
-        public static final int moon_sub_title_1=0x7f090054;
-        public static final int moon_sub_title_2=0x7f090056;
-        public static final int moon_title=0x7f090052;
-        public static final int moonscrollview=0x7f090051;
-        public static final int neptune=0x7f090046;
-        public static final int neptune_description=0x7f090048;
-        public static final int neptune_description_2=0x7f09004a;
-        public static final int neptune_sub_title_1=0x7f090047;
-        public static final int neptune_sub_title_2=0x7f090049;
-        public static final int neptune_title=0x7f090045;
-        public static final int pager=0x7f09004c;
-        public static final int pager_title_strip=0x7f09004d;
+        public static final int moon=0x7f090055;
+        public static final int moon_button=0x7f09005a;
+        public static final int moon_description=0x7f090057;
+        public static final int moon_description_2=0x7f090059;
+        public static final int moon_sub_title_1=0x7f090056;
+        public static final int moon_sub_title_2=0x7f090058;
+        public static final int moon_title=0x7f090054;
+        public static final int moonscrollview=0x7f090053;
+        public static final int neptune=0x7f090048;
+        public static final int neptune_description=0x7f09004a;
+        public static final int neptune_description_2=0x7f09004c;
+        public static final int neptune_sub_title_1=0x7f090049;
+        public static final int neptune_sub_title_2=0x7f09004b;
+        public static final int neptune_title=0x7f090047;
+        public static final int pager=0x7f09004e;
+        public static final int pager_title_strip=0x7f09004f;
         public static final int saturn=0x7f090034;
         public static final int saturn_description=0x7f090036;
         public static final int saturn_description_2=0x7f090038;
@@ -110,14 +110,16 @@ public final class R {
         public static final int scrollView6=0x7f09002a;
         public static final int scrollView7=0x7f090032;
         public static final int scrollView8=0x7f09003a;
-        public static final int scrollView9=0x7f090044;
+        public static final int scrollView9=0x7f090046;
         public static final int sun=0x7f090002;
         public static final int sun_description=0x7f090005;
         public static final int sun_description_2=0x7f090007;
         public static final int sun_sub_title_1=0x7f090004;
         public static final int sun_sub_title_2=0x7f090006;
         public static final int sun_title=0x7f090001;
-        public static final int tvComingSoon=0x7f090059;
+        public static final int tvComingSoon=0x7f09005b;
+        public static final int tvRandomQuote=0x7f090045;
+        public static final int tvRandomQuoteTitle=0x7f090044;
         public static final int tvWelcomeParagraph=0x7f090043;
         public static final int tvWelcomeTitle=0x7f090042;
         public static final int uranus=0x7f09003c;
@@ -228,6 +230,7 @@ public final class R {
          */
         public static final int pref_cate_title_1=0x7f050003;
         public static final int pref_cate_title_2=0x7f050006;
+        public static final int quote_message=0x7f050052;
         public static final int saturn_description=0x7f05003e;
         public static final int saturn_description_2=0x7f050040;
         public static final int saturn_image=0x7f050010;

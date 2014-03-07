@@ -2,24 +2,43 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5dp"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:padding="5dp" >
 
     <TextView
         android:id="@+id/tvWelcomeTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:text="@string/home_welcome"
         android:textSize="30sp"
-        android:textStyle="bold|italic"
-        android:text="@string/home_welcome" />
-    
+        android:textStyle="bold|italic" />
+
     <TextView
         android:id="@+id/tvWelcomeParagraph"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
         android:layout_below="@+id/tvWelcomeTitle"
-        android:text="@string/home_message" />
+        android:text="@string/home_message"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvRandomQuoteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWelcomeParagraph"
+        android:layout_centerHorizontal="true"
+        android:text="@string/quote_message"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tvRandomQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRandomQuoteTitle"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp" />
 
 </RelativeLayout>
