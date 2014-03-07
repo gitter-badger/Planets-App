@@ -3,7 +3,7 @@
 Planets is an application which uses a navigation drawer layout to display information about all the planets in the solar system. Planets is now in production and open to the general public. It is still undergoing development but I want it out in production for ratings and feedback. The Google+ community (See [Helpful Links](https://github.com/AMQTech/Planets#helpful-links)) is still active so feel free to join. <br>
 After you've downloaded the app, please head back to the Play Store and leave a review as well as a +1.
 
-![Nexus 4 Rendered](https://raw.github.com/AMQTech/Graphics/master/Renders/Nexus_4_Planets_updated_2_11_14.jpg?token=6075028__eyJzY29wZSI6IlJhd0Jsb2I6QU1RVGVjaC9HcmFwaGljcy9tYXN0ZXIvUmVuZGVycy9OZXh1c180X1BsYW5ldHNfdXBkYXRlZF8yXzExXzE0LmpwZyIsImV4cGlyZXMiOjEzOTM4ODAyOTZ9--cde2c4abe4844a4b5bd64ae5b72e24de29200551)
+![Nexus 4 Rendered](https://raw.github.com/AMQTech/Graphics/master/Renders/Nexus_4_Planets_updated_2_11_14.jpg?token=6075028__eyJzY29wZSI6IlJhd0Jsb2I6QU1RVGVjaC9HcmFwaGljcy9tYXN0ZXIvUmVuZGVycy9OZXh1c180X1BsYW5ldHNfdXBkYXRlZF8yXzExXzE0LmpwZyIsImV4cGlyZXMiOjEzOTQ1Njg3NTd9--fae2e93b24647293dccc5700918efa8a9902d39d)
 
 <h2><b>Using the Issues Section</b></h2>
 
