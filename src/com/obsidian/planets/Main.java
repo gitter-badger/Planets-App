@@ -29,6 +29,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -225,6 +226,12 @@ public class Main extends FragmentActivity {
 			newFragment = new SolarSystem2();
 			break;
 		case 3:
+			String url = "mailto:andrewquebe.14@gmail.com?subject=RE: Planets Feedback/Suggestion&body=Dear Developer,%0D%0A";
+			Intent i = new Intent(Intent.ACTION_VIEW);
+			i.setData(Uri.parse(url));
+			startActivity(i);
+			break;
+		case 4:
 			Intent intent = new Intent(getApplicationContext(), Settings.class);
 			startActivity(intent);
 			break;
