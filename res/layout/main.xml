@@ -14,8 +14,7 @@
         android:layout_width="250dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="#ededed"
-        android:divider="#D1D1D1"
+        android:background="#ffffff"
         android:dividerHeight="1dp" />
 
 </android.support.v4.widget.DrawerLayout>
