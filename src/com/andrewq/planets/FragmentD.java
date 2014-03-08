@@ -21,7 +21,8 @@ public class FragmentD extends Fragment {
 		button = (Button) getView().findViewById(R.id.button_4);
 		button2 = (Button) getView().findViewById(R.id.earth_satellite);
 
-		button.setOnClickListener(new View.OnClickListener() {
+		//Test
+        button.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
