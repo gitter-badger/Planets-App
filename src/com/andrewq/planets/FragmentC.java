@@ -11,34 +11,36 @@ import android.widget.Button;
 
 public class FragmentC extends Fragment {
 
-	Button button;
+    Button button;
 
-	@Override
-	public void onViewCreated(View view, Bundle savedInstanceState) {
-		super.onViewCreated(view, savedInstanceState);
+    public FragmentC() {
+        // Required empty constructor
+    }
 
-		button = (Button) getView().findViewById(R.id.button_3);
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-		button.setOnClickListener(new View.OnClickListener() {
+        button = (Button) getView().findViewById(R.id.button_3);
 
-			@Override
-			public void onClick(View v) {
+        button.setOnClickListener(new View.OnClickListener() {
 
-				String url = "http://space-facts.com/venus/";
-				Intent i = new Intent(Intent.ACTION_VIEW);
-				i.setData(Uri.parse(url));
-				startActivity(i);
-			}
-		});
-	}
+            @Override
+            public void onClick(View v) {
 
-	public FragmentC() {
-		// Required empty constructor
-	}
+                String url = "http://space-facts.com/venus/";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		return inflater.inflate(R.layout.fragment_c, container, false);
-	}
+                getActivity().overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+            }
+        });
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_c, container, false);
+    }
 }

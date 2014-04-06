@@ -5,36 +5,47 @@
     <string name="app_name">Planets</string>
 
     <!-- Action Bar Titles -->
-    <string name="action_search">Search</string>
+    <!--<string name="action_search">Search</string>-->
     <string name="action_settings">Settings</string>
-    
+
+    <string-array name="mars_moons">
+        <item>Phobos</item>
+        <item>Deimos</item>
+    </string-array>
+
     <string-array name="fragments">
         <item>Home</item>
         <item>Our Solar System</item>
-        <item>Other Solar Systems</item>
         <item>Send Feedback</item>
         <item>Settings</item>
     </string-array>
-    
+
     <string-array name="themes">
-        <item name="1">Light</item>
-        <item name="2">Dark</item>
+        <item name="1">Red</item>
+        <item name="2">Orange</item>
+        <item name="3">Blue</item>
+        <item name="4">Green</item>
+        <item name="5">Purple</item>
+        <item name="6">Dark</item>
     </string-array>
-    
+
     <string-array name="themesEntries">
         <item name="1">1</item>
         <item name="2">2</item>
+        <item name="3">3</item>
+        <item name="4">4</item>
+        <item name="5">5</item>
+        <item name="6">6</item>
     </string-array>
 
-    
+
     <!-- Preferences Titles -->
     <string name="pref_cate_title_1">General</string>
     <string name="pref_1">Rate on the Play Store</string>
     <string name="pref_2">Other Apps</string>
     <string name="pref_cate_title_2">Paid</string>
     <string name="pref_3">Donate</string>
-    <string name="pref_4">Remove Ads</string>
-    <string name="pref_5">Choose Theme</string>
+    <string name="pref_5">Theme</string>
 
     <!-- Accessibility Titles -->
     <string name="sun_image">Picture of Sun</string>
@@ -239,7 +250,7 @@ Although smaller in diameter than Uranus, Neptune has a greater mass.</string>
     <string name="home_message">This application is for learning about the universe around you. It is intended for all ages to learn about the planets in our solar system and soon, other solar systems that we know of. If you find this useful, please leave a rating. Thanks!</string>
     <string name="coming_soon">Coming Soon</string>
     <string name="coming_soon_2">This will soon be full of information about other Solar Systems that we know of.</string>
-    
+
     <!-- Other -->
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>

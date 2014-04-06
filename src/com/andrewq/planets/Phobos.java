@@ -9,19 +9,17 @@ import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v4.app.NavUtils;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class SatelliteEarth extends Activity {
+public class Phobos extends Activity {
 
     Button button;
     private ActionBar mActionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setContentView(R.layout.satellite_earth);
+        setContentView(R.layout.phobos);
         getActionBar().setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
 
@@ -65,23 +63,7 @@ public class SatelliteEarth extends Activity {
             //Black
             mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#292929")));
         }
+
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                NavUtils.navigateUpFromSameTask(this);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
-                return true;
-        }
-
-        return true;
-    }
-
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
-    }
 }

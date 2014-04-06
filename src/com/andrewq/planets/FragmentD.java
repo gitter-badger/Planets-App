@@ -11,47 +11,51 @@ import android.widget.Button;
 
 public class FragmentD extends Fragment {
 
-	Button button;
-	Button button2;
+    Button sourceButton;
+    Button moonButton;
 
-	@Override
-	public void onViewCreated(View view, Bundle savedInstanceState) {
-		super.onViewCreated(view, savedInstanceState);
+    public FragmentD() {
+        // Required empty public constructor
+    }
 
-		button = (Button) getView().findViewById(R.id.button_4);
-		button2 = (Button) getView().findViewById(R.id.earth_satellite);
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-		//Test
-        button.setOnClickListener(new View.OnClickListener() {
+        sourceButton = (Button) getView().findViewById(R.id.button_4);
+        moonButton = (Button) getView().findViewById(R.id.earth_satellite);
 
-			@Override
-			public void onClick(View v) {
+        sourceButton.setOnClickListener(new View.OnClickListener() {
 
-				String url = "http://space-facts.com/earth/";
-				Intent i = new Intent(Intent.ACTION_VIEW);
-				i.setData(Uri.parse(url));
-				startActivity(i);
-			}
-		});
+            @Override
+            public void onClick(View v) {
 
-		button2.setOnClickListener(new View.OnClickListener() {
+                String url = "http://space-facts.com/earth/";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
 
-			@Override
-			public void onClick(View arg0) {
-				Intent intent = new Intent(getActivity(), SatelliteEarth.class);
-				startActivity(intent);
-			}
-		});
-	}
+                getActivity().overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+            }
+        });
 
-	public FragmentD() {
-		// Required empty public constructor
-	}
+        moonButton.setOnClickListener(new View.OnClickListener() {
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		// Inflate the layout for this fragment
-		return inflater.inflate(R.layout.fragment_d, container, false);
-	}
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(getActivity(), SatelliteEarth.class);
+
+                startActivity(intent);
+
+                getActivity().overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+            }
+        });
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_d, container, false);
+    }
 }

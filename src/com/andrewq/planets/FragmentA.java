@@ -13,48 +13,50 @@ import android.widget.Toast;
 
 public class FragmentA extends Fragment {
 
-	Button button;
-	ImageView imageView;
+    Button button;
+    ImageView imageView;
 
-	@Override
-	public void onViewCreated(View view, Bundle savedInstanceState) {
-		super.onViewCreated(view, savedInstanceState);
+    public FragmentA() {
+        // Required empty public constructor
+    }
 
-		// final Context classContext = null;
-		button = (Button) getView().findViewById(R.id.button_1);
-		imageView = (ImageView) getView().findViewById(R.id.sun);
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-		button.setOnClickListener(new View.OnClickListener() {
+        // final Context classContext = null;
+        button = (Button) getView().findViewById(R.id.button_1);
+        imageView = (ImageView) getView().findViewById(R.id.sun);
 
-			@Override
-			public void onClick(View v) {
+        button.setOnClickListener(new View.OnClickListener() {
 
-				String url = "http://space-facts.com/the-sun/";
-				Intent i = new Intent(Intent.ACTION_VIEW);
-				i.setData(Uri.parse(url));
-				startActivity(i);
-			}
-		});
+            @Override
+            public void onClick(View v) {
 
-		imageView.setOnClickListener(new View.OnClickListener() {
+                String url = "http://space-facts.com/the-sun/";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
 
-			@Override
-			public void onClick(View v) {
-				Toast.makeText(getActivity(), "NOTE: This is still in Beta.",
-						Toast.LENGTH_LONG).show();
-				startActivity(new Intent(getActivity(), SunImageView.class));
-			}
-		});
-	}
+                getActivity().overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+            }
+        });
 
-	public FragmentA() {
-		// Required empty public constructor
-	}
+        imageView.setOnClickListener(new View.OnClickListener() {
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		// Inflate the layout for this fragment
-		return inflater.inflate(R.layout.fragment_a, container, false);
-	}
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "NOTE: This is still in Beta.",
+                        Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getActivity(), SunImageView.class));
+            }
+        });
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_a, container, false);
+    }
 }
