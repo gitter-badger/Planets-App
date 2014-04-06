@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.google.analytics.tracking.android.EasyTracker;
+
 public class FragmentE extends Fragment {
 
     //Variables
@@ -65,14 +67,14 @@ public class FragmentE extends Fragment {
                                 //If the user pressed the first item
                                 if (which == 0) {
                                     //Open the first moon activity
-                                    Intent intent = new Intent(getActivity(), Phobos.class);
-                                    startActivity(intent);
+                                    Intent phobos = new Intent(getActivity(), Phobos.class);
+                                    startActivity(phobos);
                                 }
                                 //Otherwise
                                 else {
                                     //In this case, open the other moon activity
-                                    Intent intent = new Intent(getActivity(), SatelliteEarth.class);
-                                    startActivity(intent);
+                                    Intent deimos = new Intent(getActivity(), Deimos.class);
+                                    startActivity(deimos);
                                 }
                             }
                         })
@@ -96,5 +98,17 @@ public class FragmentE extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_e, container, false);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        EasyTracker.getInstance(getActivity()).activityStart(getActivity());  // Add this method.
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        EasyTracker.getInstance(getActivity()).activityStop(getActivity());  // Add this method.
     }
 }

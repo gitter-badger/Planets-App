@@ -12,13 +12,16 @@ import android.view.MenuItem;
 
 import com.google.analytics.tracking.android.EasyTracker;
 
-public class Phobos extends Activity {
+/**
+ * Created by Andrew Quebe on 4/5/14.
+ */
+public class Deimos extends Activity {
 
     private ActionBar mActionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setContentView(R.layout.phobos);
+        setContentView(R.layout.deimos);
         getActionBar().setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
 
@@ -48,6 +51,7 @@ public class Phobos extends Activity {
             //Black
             mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#292929")));
         }
+
     }
 
     @Override
@@ -69,12 +73,6 @@ public class Phobos extends Activity {
     }
 
     @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
-    }
-
-    @Override
     public void onStart() {
         super.onStart();
         EasyTracker.getInstance(this).activityStart(this);  // Add this method.
@@ -85,5 +83,12 @@ public class Phobos extends Activity {
         super.onStop();
         EasyTracker.getInstance(this).activityStop(this);  // Add this method.
     }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+    }
+
 
 }

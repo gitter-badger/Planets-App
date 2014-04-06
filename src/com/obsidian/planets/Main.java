@@ -51,14 +51,13 @@ import com.andrewq.planets.FragmentHome;
 import com.andrewq.planets.FragmentPlanets;
 import com.andrewq.planets.R;
 import com.andrewq.planets.Settings;
+import com.google.analytics.tracking.android.EasyTracker;
 
 public class Main extends FragmentActivity {
 
     /* Things to do:
      * Put in more quotes
-     * Edit and add mars' moons properly
      * Work on sun image view (large)
-     * Configure custom animations
      */
 
     //Variables
@@ -192,10 +191,19 @@ public class Main extends FragmentActivity {
         getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        EasyTracker.getInstance(this).activityStart(this);
+    }
+
     //Called when the user presses the home button or goes to another application
     @Override
     protected void onStop() {
         super.onStop();
+
+        //Close Google Analytics
+        EasyTracker.getInstance(this).activityStop(this);
 
         //Clear wakelock
         getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);

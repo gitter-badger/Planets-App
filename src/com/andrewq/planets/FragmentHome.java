@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.analytics.tracking.android.EasyTracker;
+
 public class FragmentHome extends Fragment {
 
     TextView mQuoteView;
@@ -41,6 +43,18 @@ public class FragmentHome extends Fragment {
         handler.post(updateTextRunnable);
 
         return v;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        EasyTracker.getInstance(getActivity()).activityStart(getActivity());  // Add this method.
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        EasyTracker.getInstance(getActivity()).activityStop(getActivity());  // Add this method.
     }
 
 }

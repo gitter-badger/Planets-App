@@ -68,6 +68,25 @@
     <string name="moon_description_2">The Moon (or Luna) is the Earth’s only natural satellite and was formed 4.6 billion years ago around some 30–50 million years after the formation of the solar system. The Moon is in synchronous rotation with Earth meaning the same side is always facing the Earth. The first unmanned mission to the Moon was in 1959 by the Soviet Lunar Program with the first manned landing being Apollo 11 in 1969.</string>
     <string name="moon_button">Satellite (1)</string>
 
+    <!-- Phobos -->
+    <string name="mars_satellite">Satellite (2)</string>
+    <string name="phobos_title">Phobos</string>
+    <string name="phobos_image">Picture of Phobos</string>
+    <string name="phobos_sub_title_1">Specific Information:</string>
+    <string name="phobos_description">Dimensions: 27 × 22 × 18 km\nMean radius: 11.2667 km (1.76941 mEarths)\nMass: 1.0659×1016 kg (17.8477 nEarths)\nMean density: 1.876 g/cm cubed\nEquatorial Surface Gravity: 0.0057 m/s squared (581.4 µg)\nEscape Velocity: 11.39 m/s (41 km/h)\nTemperature ≈ 233 K\nApparent magnitude: 11.3</string>
+    <string name="phobos_sub_title_2">General Information:</string>
+    <string name="phobos_description_2">In the early 17th century, German astronomer Johannes Kepler proposed that Mars might host two moons, given that it lay between the Earth and Jupiter, which were known to have one and four satellites. No evidence of such moons could be found. Although most people thought that Mars had no moons, American astronomer Asaph Hall performed a methodical study from the U.S. Naval Observatory in Washington, D.C., searching closer to the planet than previous surveys.
+After searching without success, a frustrated Hall was about to give up but his wife, Angelina, urged him to continue. The next night, August 12, 1877, he discovered the moon that would later be known as Deimos. Six days later, he found Phobos as well. The two moons lay so close to their primary that they were hidden by the planet\'s glare. Asteroid-sized, they are also two of the smallest moons in the solar system, with the larger Phobos 7.24 times as massive as its companion, Deimos.</string>
+
+    <!-- Deimos -->
+    <string name="deimos_satellite">Satellite (2)</string>
+    <string name="deimos_title">Deimos</string>
+    <string name="deimos_image">Picture of Deimos</string>
+    <string name="deimos_sub_title_1">Specific Information:</string>
+    <string name="deimos_description">Dimensions: 7.8 × 6.0 × 5.1 km\nMean Radius: 6.2  ±  0.18 km  (0.97316 mEarths)\nMass: 1.4762×1015 kg (24.7179 nEarths)\nMean Density: 1.471±0.166 g/cm cubed\nEquatorial Surface Gravity: 0.003 m/s squared (306 µg)\nEscape Velocity: 5.556 m/s (20 km/h)\nTemperature ≈ 233 K\nApparent Magnitude: 12.45 ± 0.05 </string>
+    <string name="deimos_sub_title_2">General Information:</string>
+    <string name="deimos_description_2">On August 12, 1877, the focused search for Martian moons by American astronomer Asaph Hall resulted in the discovery of Deimos. Six days later, he identified the second Martian moon, Phobos.\nThe existence of the moons had been suggested years before, when Johannes Kepler proposed that since Earth hosted one moon and Jupiter four (as only the Galilean moons were known at the time), Mars might have two moons in orbit around it. However, no signs of such moons existed until Hall undertook his careful search.\nUsing a 26-inch refractor at the U.S. Naval Observatory in Washington, D.C., Hall made a methodical study of the region around the red planet. Peering closer to Mars than previous astronomers, he found Deimos circling only 14,576 miles (23,458 kilometers) from the center of the planet, traveling around its equator. Phobos orbited even closer in. Their close proximity and small size had kept them hidden in the glare from the planet.\nLike many objects in the solar system, the Martian moons take their names from Greek mythology. In Homer\'s ancient poem, \"The Iliad,\" Deimos (Flight) and Phobos (Fear) were the twin sons of Mars (Ares to the Greeks), and accompany him into battle.</string>
+
     <!-- Sources -->
     <string name="button_source">Source</string>
 
