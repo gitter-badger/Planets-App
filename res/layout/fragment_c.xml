@@ -3,17 +3,17 @@
     android:id="@+id/scrollView3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="top" >
+    android:layout_gravity="top">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context="com.andrewq.planets.FragmentC" >
+        tools:context="com.andrewq.planets.FragmentC">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:ignore="UselessParent" >
+            tools:ignore="UselessParent">
 
             <TextView
                 android:id="@+id/venus_title"
@@ -34,10 +34,23 @@
                 android:src="@drawable/venus" />
 
             <TextView
-                android:id="@+id/venus_sub_title_1"
+                android:id="@+id/image_caption_venus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/venus"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/image_caption"
+                android:textSize="12sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/venus_sub_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_caption_venus"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:paddingTop="4dp"

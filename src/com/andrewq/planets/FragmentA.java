@@ -44,15 +44,23 @@ public class FragmentA extends Fragment {
             }
         });
 
-        imageView.setOnClickListener(new View.OnClickListener() {
+        Thread t = new Thread(new Runnable() {
 
             @Override
-            public void onClick(View v) {
-                Toast.makeText(getActivity(), "NOTE: This is still in Beta.",
-                        Toast.LENGTH_LONG).show();
-                startActivity(new Intent(getActivity(), SunImageView.class));
+            public void run() {
+                imageView.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(getActivity(), "NOTE: This may run slow on some devices.",
+                                Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(getActivity(), SunGLActivity.class));
+                    }
+                });
             }
         });
+
+        t.start();
     }
 
     @Override

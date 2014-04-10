@@ -5,9 +5,13 @@
     <string name="app_name">Planets</string>
 
     <!-- Action Bar Titles -->
-    <!--<string name="action_search">Search</string>-->
+    <string name="search_title">Search</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Search -->
+    <string name="search_hint">Celestial Bodies:</string>
+
+    <!-- Arrays -->
     <string-array name="mars_moons">
         <item>Phobos</item>
         <item>Deimos</item>
@@ -273,7 +277,7 @@ Although smaller in diameter than Uranus, Neptune has a greater mass.</string>
     <!-- Other -->
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
-    <string name="image_caption">(Tap the image to see enlarged view)</string>
+    <string name="image_caption">(Tap on the Image to See 3D View)</string>
     <string name="quote_message">Food for Thought:</string>
 
 </resources>

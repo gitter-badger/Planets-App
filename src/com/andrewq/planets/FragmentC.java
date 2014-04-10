@@ -8,12 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.analytics.tracking.android.EasyTracker;
 
 public class FragmentC extends Fragment {
 
     Button button;
+    ImageView imageView;
 
     public FragmentC() {
         // Required empty constructor
@@ -24,6 +27,7 @@ public class FragmentC extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         button = (Button) getView().findViewById(R.id.button_3);
+        imageView = (ImageView) getView().findViewById(R.id.venus);
 
         button.setOnClickListener(new View.OnClickListener() {
 
@@ -36,6 +40,16 @@ public class FragmentC extends Fragment {
                 startActivity(i);
 
                 getActivity().overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+            }
+        });
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "NOTE: This may run slow on some devices.",
+                        Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getActivity(), VenusGLActivity.class));
             }
         });
     }

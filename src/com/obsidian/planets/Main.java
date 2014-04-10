@@ -24,6 +24,8 @@ OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
 package com.obsidian.planets;
 
 import android.app.ActionBar;
+import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -46,6 +48,7 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.SearchView;
 
 import com.andrewq.planets.FragmentHome;
 import com.andrewq.planets.FragmentPlanets;
@@ -227,6 +230,15 @@ public class Main extends FragmentActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
+
+        // Associate searchable configuration with the SearchView
+        SearchManager searchManager =
+                (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView =
+                (SearchView) menu.findItem(R.id.search).getActionView();
+        searchView.setSearchableInfo(
+                searchManager.getSearchableInfo(getComponentName()));
+
         return true;
     }
 
@@ -243,15 +255,19 @@ public class Main extends FragmentActivity {
                 return true;
 
             //Search feature coming soon
-            /*case R.id.action_search:
+            case R.id.search:
                 searchMenuItem();
-                break;*/
+                break;
         }
 
         return true;
     }
 
-    //Handle when each nav drawer item is pressed
+    private void searchMenuItem() {
+
+    }
+
+    //Handle what happens when each nav drawer item is pressed
     private void selectItem(int position) {
         Fragment newFragment = new FragmentHome();
         FragmentManager fm = getSupportFragmentManager();
