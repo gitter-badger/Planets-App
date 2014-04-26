@@ -20,9 +20,20 @@
     <string-array name="fragments">
         <item>Home</item>
         <item>Our Solar System</item>
+        <item>Image Gallery</item>
         <item>Send Feedback</item>
         <item>Settings</item>
     </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@drawable/settings_icon</item>
+    </array>
 
     <string-array name="themes">
         <item name="1">Red</item>

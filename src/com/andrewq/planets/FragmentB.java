@@ -1,6 +1,7 @@
 package com.andrewq.planets;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -29,37 +30,76 @@ public class FragmentB extends Fragment {
         button = (Button) getView().findViewById(R.id.button_2);
         imageView = (ImageView) getView().findViewById(R.id.mercury);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        int screenSize = getResources().getConfiguration().screenLayout &
+                Configuration.SCREENLAYOUT_SIZE_MASK;
 
-            @Override
-            public void onClick(View v) {
-
-                String url = "http://space-facts.com/mercury/";
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-
-                getActivity().overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
-            }
-        });
-
-        Thread t = new Thread(new Runnable() {
-
-            @Override
-            public void run() {
-                imageView.setOnClickListener(new View.OnClickListener() {
+        switch (screenSize) {
+            case Configuration.SCREENLAYOUT_SIZE_LARGE:
+                button.setOnClickListener(new View.OnClickListener() {
 
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(getActivity(), "NOTE: This may run slow on some devices.",
-                                Toast.LENGTH_LONG).show();
-                        startActivity(new Intent(getActivity(), MercuryGLActivity.class));
+
+                        String url = "http://space-facts.com/mercury/";
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+
+                        getActivity().overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
                     }
                 });
-            }
-        });
+                break;
+            case Configuration.SCREENLAYOUT_SIZE_NORMAL:
 
-        t.start();
+                button.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+
+                        String url = "http://space-facts.com/mercury/";
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+
+                        getActivity().overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+                    }
+                });
+
+                Thread t = new Thread(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        imageView.setOnClickListener(new View.OnClickListener() {
+
+                            @Override
+                            public void onClick(View v) {
+                                Toast.makeText(getActivity(), "NOTE: This is still in Beta!",
+                                        Toast.LENGTH_LONG).show();
+                                startActivity(new Intent(getActivity(), MercuryGLActivity.class));
+                            }
+                        });
+                    }
+                });
+
+                t.start();
+                break;
+            case Configuration.SCREENLAYOUT_SIZE_SMALL:
+                button.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+
+                        String url = "http://space-facts.com/mercury/";
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+
+                        getActivity().overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+                    }
+                });
+                break;
+            default:
+        }
 
 
     }
@@ -67,6 +107,19 @@ public class FragmentB extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        int screenSize = getResources().getConfiguration().screenLayout &
+                Configuration.SCREENLAYOUT_SIZE_MASK;
+
+        switch (screenSize) {
+            case Configuration.SCREENLAYOUT_SIZE_LARGE:
+                return inflater.inflate(R.layout.fragment_b_no_opengl, container, false);
+            case Configuration.SCREENLAYOUT_SIZE_NORMAL:
+                return inflater.inflate(R.layout.fragment_b, container, false);
+            case Configuration.SCREENLAYOUT_SIZE_SMALL:
+                return inflater.inflate(R.layout.fragment_b_no_opengl, container, false);
+            default:
+        }
+
         return inflater.inflate(R.layout.fragment_b, container, false);
     }
 

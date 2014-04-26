@@ -2,6 +2,7 @@ package com.andrewq.planets;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -35,11 +36,13 @@ public class SatelliteEarth extends Activity {
             public void onClick(View v) {
 
                 String url = "http://space-facts.com/the-moon/";
+                Bundle scaleBundle = ActivityOptions.makeScaleUpAnimation(
+                        v, 0, 0, v.getWidth(), v.getHeight()).toBundle();
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
-                startActivity(i);
+                startActivity(i, scaleBundle);
 
-                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+                //overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
             }
         });
 

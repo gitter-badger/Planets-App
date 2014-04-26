@@ -3,12 +3,12 @@
     android:id="@+id/scrollView4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="top" >
+    android:layout_gravity="top">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="UselessParent" >
+        tools:ignore="UselessParent">
 
         <TextView
             android:id="@+id/earth_title"
@@ -29,10 +29,23 @@
             android:src="@drawable/earth" />
 
         <TextView
-            android:id="@+id/earth_sub_title_1"
+            android:id="@+id/image_caption_earth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/earth"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/image_caption"
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/earth_sub_title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_caption_earth"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:paddingTop="4dp"
@@ -75,12 +88,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/earth_description_2"
-            android:layout_centerInParent="true" >
+            android:layout_centerInParent="true">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center" >
+                android:layout_gravity="center">
 
                 <Button
                     android:id="@+id/earth_satellite"
