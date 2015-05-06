@@ -1,9 +1,9 @@
+<h1><b>This app is now Deprecated. Please visit <a href="https://github.com/Andrew-Quebe/Planets-Gradle">here</a> if you'd like to make contributions to the newest versions of Planets</b><h1>
+
 <h1><b>Welcome to the Planets README</b></h1>
 
 Planets is an application which uses a navigation drawer layout to display information about all the planets in the solar system. Planets is now in production and open to the general public. It is still undergoing development but I want it out in production for ratings and feedback. The Google+ community (See [Helpful Links](https://github.com/AMQTech/Planets#helpful-links)) is still active so feel free to join. <br>
 After you've downloaded the app, please head back to the Play Store and leave a review as well as a +1.
-
-![Nexus 4 Rendered](https://raw.github.com/AMQTech/Graphics/master/Renders/Nexus_4_Planets_updated_2_11_14.jpg?token=6075028__eyJzY29wZSI6IlJhd0Jsb2I6QU1RVGVjaC9HcmFwaGljcy9tYXN0ZXIvUmVuZGVycy9OZXh1c180X1BsYW5ldHNfdXBkYXRlZF8yXzExXzE0LmpwZyIsImV4cGlyZXMiOjEzOTUyNTc2Mzd9--b6eb4589ee4582c87ae22b58452a65dae6d4682b)
 
 <h2><b>Using the Issues Section</b></h2>
 
