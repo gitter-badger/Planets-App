@@ -218,3 +218,6 @@ I, the maintainer, have set up the issues section to not only be a place to repo
 > [View Milestones](https://github.com/AMQTech/Planets/issues/milestones) <br>
 > [View Raw LICENSE File](https://raw.github.com/AMQTech/Planets/master/License) <br>
 > [Google Play Link ](https://play.google.com/store/apps/details?id=com.andrewq.planets)
+
+
+[![Join the chat at https://gitter.im/Andrew-Quebe/Planets-App](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Andrew-Quebe/Planets-App?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
